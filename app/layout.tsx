@@ -68,14 +68,6 @@ export default function RootLayout({
                     </li>
                   </ul>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">Kontak</h3>
-                  <ul className="space-y-2 text-gray-300">
-                    <li>Jl. Contoh Alamat No. 123, Jakarta Selatan</li>
-                    <li>+62 812 3456 7890</li>
-                    <li>info@maxellpack.com</li>
-                  </ul>
-                </div>
               </div>
               <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
                 <p>
