@@ -1,9 +1,9 @@
-import { MapPin, Phone, Mail, MessageSquare, Send } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { MapPin, Phone, Mail, MessageSquare, Send } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function HubungiKami() {
   return (
@@ -11,10 +11,12 @@ export default function HubungiKami() {
       {/* Hero Section */}
       <section className="bg-lavender py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-6 text-gray-800">Hubungi Kami</h1>
+          <h1 className="text-4xl font-bold mb-6 text-gray-800">
+            Hubungi Kami
+          </h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Kami siap membantu Anda dengan pertanyaan, permintaan penawaran, atau konsultasi tentang kebutuhan kemasan
-            Anda.
+            Kami siap membantu Anda dengan pertanyaan, permintaan penawaran,
+            atau konsultasi tentang kebutuhan kemasan Anda.
           </p>
         </div>
       </section>
@@ -24,7 +26,9 @@ export default function HubungiKami() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-gray-800">Informasi Kontak</h2>
+              <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                Informasi Kontak
+              </h2>
 
               <div className="grid gap-6">
                 <Card className="border-0 shadow-md">
@@ -32,13 +36,11 @@ export default function HubungiKami() {
                     <div className="flex items-start">
                       <MapPin className="h-6 w-6 text-indigo mr-3 mt-1" />
                       <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">Alamat</h3>
+                        <h3 className="font-semibold text-gray-800 mb-1">
+                          Alamat
+                        </h3>
                         <p className="text-gray-600">
-                          Jl. Contoh Alamat No. 123
-                          <br />
-                          Jakarta Selatan, DKI Jakarta
-                          <br />
-                          Indonesia 12345
+                          Jl. Kencana Raya No.C1 No.5 Jakarta
                         </p>
                       </div>
                     </div>
@@ -50,7 +52,9 @@ export default function HubungiKami() {
                     <div className="flex items-start">
                       <Phone className="h-6 w-6 text-indigo mr-3 mt-1" />
                       <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">Telepon</h3>
+                        <h3 className="font-semibold text-gray-800 mb-1">
+                          Telepon
+                        </h3>
                         <p className="text-gray-600">+62 812 3456 7890</p>
                       </div>
                     </div>
@@ -62,7 +66,9 @@ export default function HubungiKami() {
                     <div className="flex items-start">
                       <Mail className="h-6 w-6 text-indigo mr-3 mt-1" />
                       <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
+                        <h3 className="font-semibold text-gray-800 mb-1">
+                          Email
+                        </h3>
                         <p className="text-gray-600">info@maxellpack.com</p>
                       </div>
                     </div>
@@ -71,16 +77,22 @@ export default function HubungiKami() {
               </div>
 
               <div className="mt-10">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Jam Operasional</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                  Jam Operasional
+                </h2>
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <div className="grid grid-cols-2 gap-2">
-                    <div className="text-gray-700 font-medium">Senin - Jumat:</div>
+                    <div className="text-gray-700 font-medium">
+                      Senin - Jumat:
+                    </div>
                     <div className="text-gray-600">08:00 - 17:00 WIB</div>
 
                     <div className="text-gray-700 font-medium">Sabtu:</div>
                     <div className="text-gray-600">09:00 - 14:00 WIB</div>
 
-                    <div className="text-gray-700 font-medium">Minggu & Hari Libur:</div>
+                    <div className="text-gray-700 font-medium">
+                      Minggu & Hari Libur:
+                    </div>
                     <div className="text-gray-600">Tutup</div>
                   </div>
                 </div>
@@ -88,7 +100,9 @@ export default function HubungiKami() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-gray-800">Hubungi Kami</h2>
+              <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                Hubungi Kami
+              </h2>
 
               <Tabs defaultValue="form">
                 <TabsList className="grid grid-cols-2 mb-6">
@@ -101,38 +115,70 @@ export default function HubungiKami() {
                     <CardContent className="p-6">
                       <form className="grid gap-4">
                         <div className="grid gap-2">
-                          <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                          <label
+                            htmlFor="name"
+                            className="text-sm font-medium text-gray-700"
+                          >
                             Nama Lengkap
                           </label>
-                          <Input id="name" placeholder="Masukkan nama lengkap Anda" />
+                          <Input
+                            id="name"
+                            placeholder="Masukkan nama lengkap Anda"
+                          />
                         </div>
 
                         <div className="grid gap-2">
-                          <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                          <label
+                            htmlFor="email"
+                            className="text-sm font-medium text-gray-700"
+                          >
                             Email
                           </label>
-                          <Input id="email" type="email" placeholder="Masukkan email Anda" />
+                          <Input
+                            id="email"
+                            type="email"
+                            placeholder="Masukkan email Anda"
+                          />
                         </div>
 
                         <div className="grid gap-2">
-                          <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                          <label
+                            htmlFor="phone"
+                            className="text-sm font-medium text-gray-700"
+                          >
                             Nomor Telepon
                           </label>
-                          <Input id="phone" placeholder="Masukkan nomor telepon Anda" />
+                          <Input
+                            id="phone"
+                            placeholder="Masukkan nomor telepon Anda"
+                          />
                         </div>
 
                         <div className="grid gap-2">
-                          <label htmlFor="subject" className="text-sm font-medium text-gray-700">
+                          <label
+                            htmlFor="subject"
+                            className="text-sm font-medium text-gray-700"
+                          >
                             Subjek
                           </label>
-                          <Input id="subject" placeholder="Masukkan subjek pesan" />
+                          <Input
+                            id="subject"
+                            placeholder="Masukkan subjek pesan"
+                          />
                         </div>
 
                         <div className="grid gap-2">
-                          <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                          <label
+                            htmlFor="message"
+                            className="text-sm font-medium text-gray-700"
+                          >
                             Pesan
                           </label>
-                          <Textarea id="message" placeholder="Masukkan pesan Anda" rows={5} />
+                          <Textarea
+                            id="message"
+                            placeholder="Masukkan pesan Anda"
+                            rows={5}
+                          />
                         </div>
 
                         <Button className="bg-indigo hover:bg-indigo/90 text-gray-800 mt-2">
@@ -151,10 +197,13 @@ export default function HubungiKami() {
                         <div className="bg-green-50 p-4 rounded-lg border border-green-100">
                           <div className="flex items-center mb-4">
                             <MessageSquare className="h-5 w-5 text-green-500 mr-2" />
-                            <h3 className="font-semibold text-gray-800">Konsultasi</h3>
+                            <h3 className="font-semibold text-gray-800">
+                              Konsultasi
+                            </h3>
                           </div>
                           <p className="text-gray-600 mb-4">
-                            Hubungi tim konsultasi kami untuk mendiskusikan kebutuhan kemasan Anda dan mendapatkan saran
+                            Hubungi tim konsultasi kami untuk mendiskusikan
+                            kebutuhan kemasan Anda dan mendapatkan saran
                             terbaik.
                           </p>
                           <a
@@ -181,10 +230,13 @@ export default function HubungiKami() {
                         <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
                           <div className="flex items-center mb-4">
                             <MessageSquare className="h-5 w-5 text-blue-500 mr-2" />
-                            <h3 className="font-semibold text-gray-800">Order</h3>
+                            <h3 className="font-semibold text-gray-800">
+                              Order
+                            </h3>
                           </div>
                           <p className="text-gray-600 mb-4">
-                            Sudah siap untuk memesan? Hubungi tim order kami untuk memproses pesanan Anda dengan cepat.
+                            Sudah siap untuk memesan? Hubungi tim order kami
+                            untuk memproses pesanan Anda dengan cepat.
                           </p>
                           <a
                             href="https://wa.me/6289876543210?text=Halo%20Maxellpack,%20saya%20ingin%20memesan%20kemasan"
@@ -224,10 +276,18 @@ export default function HubungiKami() {
                               <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                               <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                             </svg>
-                            <h3 className="font-semibold text-gray-800">Linktree</h3>
+                            <h3 className="font-semibold text-gray-800">
+                              Linktree
+                            </h3>
                           </div>
-                          <p className="text-gray-600 mb-4">Temukan semua link penting kami di satu tempat.</p>
-                          <a href="https://linktr.ee/maxellpack" target="_blank" rel="noopener noreferrer">
+                          <p className="text-gray-600 mb-4">
+                            Temukan semua link penting kami di satu tempat.
+                          </p>
+                          <a
+                            href="https://linktr.ee/maxellpack"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">
                               Kunjungi Linktree Kami
                             </Button>
@@ -246,10 +306,12 @@ export default function HubungiKami() {
       {/* Map Section */}
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">Lokasi Kami</h2>
+          <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
+            Lokasi Kami
+          </h2>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2954797397586!2d106.8269113!3d-6.2297771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f3a3f3f3f3%3A0x3f3f3f3f3f3f3f3f!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1619161234567!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.035313943259!2d106.72282017903063!3d-6.125950244213389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d54d05fd783%3A0xe9d6031cf3d04ca!2sPT%20MAXELL%20PETROASIA%20INDONESIA!5e0!3m2!1sen!2sid!4v1748506343752!5m2!1sen!2sid"
               width="100%"
               height="450"
               style={{ border: 0 }}
@@ -261,5 +323,5 @@ export default function HubungiKami() {
         </div>
       </section>
     </main>
-  )
+  );
 }
