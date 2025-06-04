@@ -14,18 +14,24 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
       {/* Section 1: Welcome Banner */}
-      <section className="relative w-full min-h-[75vh] md:h-[500px] lg:h-[600px]">
-        <Image
-          src="/factory.png"
-          alt="Pabrik Maxellpack - Produksi Kardus"
-          fill
-          className="object-cover z-0"
-          priority
-        />
+      <section className="relative w-full min-h-screen">
+        {/* Mobile: static image */}
+        <div className="block md:hidden w-full h-full absolute inset-0 z-0">
+          <Image
+            src="/banner_1.png"
+            alt="Banner 1 - Maxellpack"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+        {/* Desktop: carousel */}
+        <div className="hidden md:block w-full h-full absolute inset-0 z-0">
+          <Carousel />
+        </div>
         {/* White overlay */}
-        <div className="absolute inset-0 bg-white/60 z-10" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-black/30 text-white z-20">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        <div className="absolute inset-0 flex flex-col justify-center p-4  text-white z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Solusi Kemasan Berkualitas untuk Bisnis Anda
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl">

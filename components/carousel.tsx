@@ -1,91 +1,70 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
     id: 0,
-    src: "/factory.png",
-    alt: "Pabrik Maxellpack - Produksi Kardus",
+    src: "/banner_1.png",
+    alt: "Banner 1 - Maxellpack",
   },
   {
     id: 1,
-    src: "/placeholder.svg?height=600&width=1200",
-    alt: "Pabrik Maxellpack",
+    src: "/banner_2.png",
+    alt: "Banner 2 - Maxellpack",
   },
   {
     id: 2,
-    src: "/placeholder.svg?height=600&width=1200",
-    alt: "Produk Custom",
-  },
-  {
-    id: 3,
-    src: "/placeholder.svg?height=600&width=1200",
-    alt: "Solusi Kemasan",
+    src: "/banner_3.png",
+    alt: "Banner 3 - Maxellpack",
   },
 ];
 
 export function Carousel() {
   const [current, setCurrent] = useState(0);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  const next = () => setCurrent((prev) => (prev + 1) % slides.length);
   const prev = () =>
-    setCurrent((current) => (current === 0 ? slides.length - 1 : current - 1));
-  const next = () =>
-    setCurrent((current) => (current === slides.length - 1 ? 0 : current + 1));
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      next();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(next, 3000);
+    return () => timeoutRef.current && clearTimeout(timeoutRef.current);
+  }, [current]);
 
   return (
     <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden">
-      <div
-        className="flex transition-transform duration-500 ease-out h-full"
-        style={{ transform: `translateX(-${current * 100}%)` }}
-      >
-        {slides.map((slide, idx) => (
-          <div key={slide.id} className="w-full h-full flex-shrink-0">
-            <Image
-              src={slide.src || "/placeholder.svg"}
-              alt={slide.alt}
-              fill
-              className={idx === 0 ? "object-contain" : "object-cover"}
-              priority
-            />
-          </div>
-        ))}
-      </div>
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button
-          onClick={prev}
-          className="p-1 rounded-full shadow bg-lavender/80 text-gray-800 hover:bg-lavender"
+      {slides.map((slide, idx) => (
+        <div
+          key={slide.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            current === idx ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
         >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-        <button
-          onClick={next}
-          className="p-1 rounded-full shadow bg-lavender/80 text-gray-800 hover:bg-lavender"
-        >
-          <ChevronRight className="w-6 h-6" />
-        </button>
-      </div>
-      <div className="absolute bottom-4 right-0 left-0">
-        <div className="flex items-center justify-center gap-2">
-          {slides.map((_, i) => (
-            <div
-              key={i}
-              className={`
-                transition-all w-2 h-2 bg-white rounded-full
-                ${current === i ? "p-1.5" : "bg-opacity-50"}
-              `}
-            />
-          ))}
+          <Image
+            src={slide.src}
+            alt={slide.alt}
+            fill
+            className="object-contain md:object-cover"
+            priority={current === idx}
+          />
         </div>
+      ))}
+      {/* Dots */}
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              current === i ? "bg-white p-1.5" : "bg-white/50"
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   );
