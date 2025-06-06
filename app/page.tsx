@@ -25,17 +25,17 @@ export default function Home() {
           <Carousel />
         </div>
         {/* White overlay */}
-        <div className="absolute inset-0 flex flex-col justify-center p-4  text-black z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Solusi Kemasan Berkualitas untuk Bisnis Anda
+        <div className="absolute inset-0 flex flex-col justify-center p-4  text-[#5453E3] z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
+          <h1 className="text-7xl md:text-5xl font-bold mb-4">
+            SOLUSI KEMASAN BERKUALITAS UNTUK BISNIS ANDA
           </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl">
+          <p className="text-xl md:text-2xl mb-8 text-5xl">
             Maxellpack menyediakan kemasan custom berkualitas tinggi untuk
             berbagai kebutuhan bisnis Anda
           </p>
           <Link href="/hubungi-kami">
-            <Button className="bg-indigo hover:bg-indigo/90 text-white font-medium px-6 py-3 rounded-lg">
-              Hubungi Kami <ArrowRight className="ml-2 h-4 w-4" />
+            <Button className="bg-indigo hover:bg-indigo/90 bg-[#EFF187] text-[#5453E3] font-bold px-8 py-4 rounded-lg text-lg">
+              CONSULT NOW <ArrowRight className="ml-3 h-5 w-5" />
             </Button>
           </Link>
         </div>

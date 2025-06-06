@@ -5,9 +5,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
-  title: "Maxellpack - Solusi Kemasan Berkualitas",
+  title: "Welcome to Maxellpack",
   description:
-    "Maxellpack menyediakan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis Anda",
+    "Innovative packaging solutions tailored to your business",
   generator: "v0.dev",
 };
 
