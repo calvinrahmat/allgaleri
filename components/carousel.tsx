@@ -36,7 +36,7 @@ export function Carousel() {
   }, [current]);
 
   return (
-    <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden">
+    <div className="relative w-full min-h-screen md:h-[500px] lg:h-[600px] overflow-hidden ">
       {slides.map((slide, idx) => (
         <div
           key={slide.id}
