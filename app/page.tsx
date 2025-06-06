@@ -26,10 +26,10 @@ export default function Home() {
         </div>
         {/* White overlay */}
         <div className="absolute inset-0 flex flex-col justify-center p-4  text-[#5453E3] z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
-          <h1 className="text-7xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4">
             SOLUSI KEMASAN BERKUALITAS UNTUK BISNIS ANDA
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-5xl">
+          <p className="text-lg md:text-xl lg:text-2xl mb-8">
             Maxellpack menyediakan kemasan custom berkualitas tinggi untuk
             berbagai kebutuhan bisnis Anda
           </p>
