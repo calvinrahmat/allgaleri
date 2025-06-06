@@ -9,21 +9,16 @@ import { SocialLinks } from "@/components/social-links";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
 import Image from "next/image";
 import { HeroLogosMarquee } from "@/components/HeroLogosMarquee";
+import { MobileCarousel } from "@/components/MobileCarousel";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
       {/* Section 1: Welcome Banner */}
       <section className="relative w-full min-h-screen">
-        {/* Mobile: static image */}
+        {/* Mobile: auto-rotating carousel */}
         <div className="block md:hidden w-full h-full absolute inset-0 z-0">
-          <Image
-            src="/banner_1.png"
-            alt="Banner 1 - Maxellpack"
-            fill
-            className="object-contain"
-            priority
-          />
+          <MobileCarousel />
         </div>
         {/* Desktop: carousel */}
         <div className="hidden md:block inset-0 z-0 ">
