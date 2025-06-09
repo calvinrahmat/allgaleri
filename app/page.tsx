@@ -25,7 +25,7 @@ export default function Home() {
           <Carousel />
         </div>
         {/* White overlay */}
-        <div className="absolute inset-0 flex flex-col justify-start pt-32 md:pt-40 p-4 text-[#5453E3] z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
+        <div className="absolute inset-0 flex flex-col justify-start md:pt-40 p-4 text-[#5453E3] z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4">
             SOLUSI KEMASAN BERKUALITAS UNTUK BISNIS ANDA
           </h1>
@@ -255,12 +255,13 @@ export default function Home() {
       {/* WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <Link href="https://wa.me/6281234567890?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan">
-          <Button className="bg-white h-24 w-24 rounded-full flex items-center justify-center shadow-lg p-0">
+          <Button className="bg-white h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg p-0">
             <Image
               src="/whatsapp.svg"
               alt="WhatsApp"
-              width={48}
-              height={48}
+              width={32}
+              height={32}
+              className="md:w-12 md:h-12"
             />
           </Button>
         </Link>

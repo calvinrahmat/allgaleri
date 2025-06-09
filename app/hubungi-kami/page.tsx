@@ -21,90 +21,13 @@ export default function HubungiKami() {
         </div>
       </section>
 
-      {/* Contact Information */}
-      <section className="py-16 px-4 bg-cream">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-gray-800">
-                Informasi Kontak
-              </h2>
 
-              <div className="grid gap-6">
-                <Card className="border-0 shadow-md">
-                  <CardContent className="p-6">
-                    <div className="flex items-start">
-                      <MapPin className="h-6 w-6 text-indigo mr-3 mt-1" />
-                      <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">
-                          Alamat
-                        </h3>
-                        <p className="text-gray-600">
-                          Jl. Kencana Raya No.C1 No.5 Jakarta
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-md">
-                  <CardContent className="p-6">
-                    <div className="flex items-start">
-                      <Phone className="h-6 w-6 text-indigo mr-3 mt-1" />
-                      <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">
-                          Telepon
-                        </h3>
-                        <p className="text-gray-600">+62 812 3456 7890</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-md">
-                  <CardContent className="p-6">
-                    <div className="flex items-start">
-                      <Mail className="h-6 w-6 text-indigo mr-3 mt-1" />
-                      <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">
-                          Email
-                        </h3>
-                        <p className="text-gray-600">info@maxellpack.com</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <div className="mt-10">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">
-                  Jam Operasional
-                </h2>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="text-gray-700 font-medium">
-                      Senin - Jumat:
-                    </div>
-                    <div className="text-gray-600">08:00 - 17:00 WIB</div>
-
-                    <div className="text-gray-700 font-medium">Sabtu:</div>
-                    <div className="text-gray-600">09:00 - 14:00 WIB</div>
-
-                    <div className="text-gray-700 font-medium">
-                      Minggu & Hari Libur:
-                    </div>
-                    <div className="text-gray-600">Tutup</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
+      <div className="py-16 px-4 bg-cream">
               <h2 className="text-2xl font-bold mb-6 text-gray-800">
                 Hubungi Kami
               </h2>
-
-              <Tabs defaultValue="whatsapp">
+              
+      <Tabs defaultValue="whatsapp">
                 
                 <TabsContent value="whatsapp">
                   <Card className="border-0 shadow-md">
@@ -212,13 +135,56 @@ export default function HubungiKami() {
                       </div>
                     </CardContent>
                   </Card>
-                </TabsContent>
-
-                
-
-               
+                </TabsContent>              
               </Tabs>
             </div>
+
+      {/* Contact Information */}
+      <section className=" px-4 bg-cream">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                Informasi Kontak
+              </h2>
+
+              <div className="grid gap-6">
+                <Card className="border-0 shadow-md">
+                  <CardContent className="p-6">
+                    <div className="flex items-start">
+                      <MapPin className="h-6 w-6 text-indigo mr-3 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-gray-800 mb-1">
+                          Alamat
+                        </h3>
+                        <p className="text-gray-600">
+                          Jl. Kencana Raya No.C1 No.5 Jakarta
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 shadow-md">
+                  <CardContent className="p-6">
+                    <div className="flex items-start">
+                      <Phone className="h-6 w-6 text-indigo mr-3 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-gray-800 mb-1">
+                          Telepon
+                        </h3>
+                        <p className="text-gray-600">+62 812 3456 7890</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+              
+              </div>
+
+              
+            </div>
+
           </div>
         </div>
       </section>

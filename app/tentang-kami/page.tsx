@@ -26,14 +26,7 @@ export default function TentangKami() {
               </Button>
             </Link>
           </div>
-          <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src="/factory.png"
-              alt="Maxellpack Factory"
-              fill
-              className="object-cover"
-            />
-          </div>
+          
         </div>
       </section>
 
