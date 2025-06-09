@@ -20,7 +20,7 @@ export function MobileCarousel() {
   }, []);
 
   return (
-    <div className="w-full h-full absolute inset-0 z-0">
+    <div className="w-full h-full absolute inset-0 z-0 pt-32">
       <Image
         src={mobileBanners[index].src}
         alt={mobileBanners[index].alt}
