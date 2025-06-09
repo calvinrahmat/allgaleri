@@ -61,7 +61,7 @@ export default function RootLayout({
                     <li>
                       <Link
                         href="/hubungi-kami"
-                        className="text-gray-300 hover:text-white"
+                        className="text-white"
                       >
                         Hubungi Kami
                       </Link>

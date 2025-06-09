@@ -21,7 +21,7 @@ export default function TentangKami() {
               bagi banyak brand ternama di Indonesia.
             </p>
             <Link href="/hubungi-kami">
-              <Button className="bg-indigo hover:bg-indigo/90 text-gray-800">
+              <Button className="bg-indigo hover:bg-indigo/90 text-white">
                 Hubungi Kami
               </Button>
             </Link>

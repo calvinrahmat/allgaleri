@@ -104,92 +104,8 @@ export default function HubungiKami() {
                 Hubungi Kami
               </h2>
 
-              <Tabs defaultValue="form">
-                <TabsList className="grid grid-cols-2 mb-6">
-                  <TabsTrigger value="form">Form Kontak</TabsTrigger>
-                  <TabsTrigger value="whatsapp">WhatsApp</TabsTrigger>
-                </TabsList>
-
-                <TabsContent value="form">
-                  <Card className="border-0 shadow-md">
-                    <CardContent className="p-6">
-                      <form className="grid gap-4">
-                        <div className="grid gap-2">
-                          <label
-                            htmlFor="name"
-                            className="text-sm font-medium text-gray-700"
-                          >
-                            Nama Lengkap
-                          </label>
-                          <Input
-                            id="name"
-                            placeholder="Masukkan nama lengkap Anda"
-                          />
-                        </div>
-
-                        <div className="grid gap-2">
-                          <label
-                            htmlFor="email"
-                            className="text-sm font-medium text-gray-700"
-                          >
-                            Email
-                          </label>
-                          <Input
-                            id="email"
-                            type="email"
-                            placeholder="Masukkan email Anda"
-                          />
-                        </div>
-
-                        <div className="grid gap-2">
-                          <label
-                            htmlFor="phone"
-                            className="text-sm font-medium text-gray-700"
-                          >
-                            Nomor Telepon
-                          </label>
-                          <Input
-                            id="phone"
-                            placeholder="Masukkan nomor telepon Anda"
-                          />
-                        </div>
-
-                        <div className="grid gap-2">
-                          <label
-                            htmlFor="subject"
-                            className="text-sm font-medium text-gray-700"
-                          >
-                            Subjek
-                          </label>
-                          <Input
-                            id="subject"
-                            placeholder="Masukkan subjek pesan"
-                          />
-                        </div>
-
-                        <div className="grid gap-2">
-                          <label
-                            htmlFor="message"
-                            className="text-sm font-medium text-gray-700"
-                          >
-                            Pesan
-                          </label>
-                          <Textarea
-                            id="message"
-                            placeholder="Masukkan pesan Anda"
-                            rows={5}
-                          />
-                        </div>
-
-                        <Button className="bg-indigo hover:bg-indigo/90 text-gray-800 mt-2">
-                          <Send className="h-4 w-4 mr-2" />
-                          Kirim Pesan
-                        </Button>
-                      </form>
-                    </CardContent>
-                  </Card>
-                </TabsContent>
-
+              <Tabs defaultValue="whatsapp">
+                
                 <TabsContent value="whatsapp">
                   <Card className="border-0 shadow-md">
                     <CardContent className="p-6">
@@ -297,6 +213,10 @@ export default function HubungiKami() {
                     </CardContent>
                   </Card>
                 </TabsContent>
+
+                
+
+               
               </Tabs>
             </div>
           </div>
