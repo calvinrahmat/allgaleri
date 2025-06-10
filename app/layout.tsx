@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Welcome to Maxellpack",
@@ -33,9 +34,13 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-indigo mb-4">
-                    Maxellpack
-                  </h2>
+                  <Image
+                    src="/maxellpack-logo.jpeg"
+                    alt="Maxellpack Logo"
+                    width={180}
+                    height={180}
+                    className="mb-4"
+                  />
                   <p className="text-gray-300">
                     Solusi kemasan berkualitas untuk berbagai kebutuhan bisnis
                     Anda. Kami menyediakan kemasan custom yang sesuai dengan
