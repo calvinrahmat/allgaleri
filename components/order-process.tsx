@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 const steps = [
   {
     id: 1,
-    title: "Konsultasi",
+    title: "Hubungi Admin Sales Kami",
     description: "Diskusikan kebutuhan kemasan Anda dengan tim kami",
     icon: (
       <svg
@@ -24,7 +24,7 @@ const steps = [
   },
   {
     id: 2,
-    title: "Desain",
+    title: "Konsultasikan Kebutuhan Anda",
     description: "Tim desain kami akan membuat desain sesuai kebutuhan Anda",
     icon: (
       <svg
@@ -48,7 +48,7 @@ const steps = [
   },
   {
     id: 3,
-    title: "Persetujuan",
+    title: "Quotation Proses (Perhitungan untuk Penawaran Harga)",
     description: "Anda menyetujui desain dan spesifikasi kemasan",
     icon: (
       <svg
@@ -70,7 +70,7 @@ const steps = [
   },
   {
     id: 4,
-    title: "Produksi",
+    title: "Pembuatan Sampel Setelah Penawaran Harga Disetujui",
     description: "Kami memproduksi kemasan sesuai dengan spesifikasi yang disetujui",
     icon: (
       <svg
@@ -92,7 +92,7 @@ const steps = [
   },
   {
     id: 5,
-    title: "Pengiriman",
+    title: "Setelah Sampel Disetujui, Melakukan Pembayaran DP",
     description: "Kami mengirimkan pesanan Anda tepat waktu",
     icon: (
       <svg
@@ -114,6 +114,27 @@ const steps = [
       </svg>
     ),
   },
+  {
+    id: 6,
+    title: "Produksi Massal Berlangsung Selama 10-15 Hari Kerja",
+    description: "Proses produksi massal berlangsung selama 10-15 hari kerja",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-red-500"
+      >
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+      </svg>
+    ),
+  },
 ]
 
 export function OrderProcess() {
@@ -131,7 +152,6 @@ export function OrderProcess() {
               <Card className="border-0 shadow-md">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
                 </CardContent>
               </Card>
             </div>

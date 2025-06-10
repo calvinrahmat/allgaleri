@@ -164,16 +164,18 @@ export default function Home() {
           </div>
         </div>
 
-        <button className="mt-12 bg-white border border-gray-300 rounded-full px-8 py-3 shadow-md font-medium hover:bg-gray-100 transition">
-          Kami Siap Membantu Anda
-        </button>
+        <Link href="https://wa.me/6289876543210?text=Halo%20Maxellpack,%20saya%20ingin%20memesan%20kemasan" target="_blank" rel="noopener noreferrer">
+          <button className="mt-12 bg-white border border-gray-300 rounded-full px-8 py-3 shadow-md font-medium hover:bg-gray-100 transition">
+            Kami Siap Membantu Anda
+          </button>
+        </Link>
       </section>
 
       {/* Section 4: Portofolio Proyek */}
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            Portofolio Proyek
+            Portofolio
           </h2>
           <PortfolioGallery />
           <div className="text-center mt-10">
@@ -259,6 +261,8 @@ export default function Home() {
           </Button>
         </Link>
       </div>
+
+      
     </main>
   );
 }
