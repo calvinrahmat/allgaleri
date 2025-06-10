@@ -71,109 +71,102 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 2.5: Permasalahan Customer */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-12">
-          <div className="flex-shrink-0 w-full lg:w-1/3 flex justify-center mb-8 lg:mb-0">
-            <Image
-              src="/woman.png"
-              alt="Customer thinking"
-              width={300}
-              height={400}
-              className="object-contain"
-              priority
-            />
-          </div>
-          <div className="w-full lg:w-2/3">
-            <h2 className="text-3xl font-bold text-center lg:text-left mb-12 text-gray-800">
-              Permasalahan yang Sering Dihadapi
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-cream p-6 rounded-lg shadow-md">
-                <div className="text-indigo mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Kemasan Tidak Tahan Lama
-                </h3>
-                <p className="text-gray-600">
-                  Kemasan yang mudah rusak dan tidak tahan terhadap kondisi
-                  pengiriman yang beragam.
-                </p>
-              </div>
-              <div className="bg-cream p-6 rounded-lg shadow-md">
-                <div className="text-indigo mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Waktu Produksi Lama
-                </h3>
-                <p className="text-gray-600">
-                  Proses produksi yang memakan waktu lama dan tidak sesuai
-                  dengan timeline bisnis.
-                </p>
-              </div>
-              <div className="bg-cream p-6 rounded-lg shadow-md">
-                <div className="text-indigo mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Kualitas Tidak Konsisten
-                </h3>
-                <p className="text-gray-600">
-                  Kualitas kemasan yang tidak konsisten antar batch produksi.
-                </p>
-              </div>
+      {/* Section 2.5: Permasalahan Customer (Visual) */}
+      <section className="relative py-16 px-4 bg-white flex flex-col items-center">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+          PERMASALAHAN CUSTOMER
+        </h2>
+        <div className="relative w-full max-w-3xl h-[400px] flex items-center justify-center">
+          {/* SVG Container for Arrows - Hidden on Mobile */}
+          <svg className="absolute inset-0 w-full h-full hidden md:block" style={{ zIndex: 5 }}>
+            {/* Dashed lines with circles at the end */}
+            {/* Top Left */}
+            <line x1="140" y1="100" x2="300" y2="160" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="300" cy="160" r="8" fill="#5453E3" className="animated-circle" />
+            {/* Middle Left */}
+            <line x1="140" y1="200" x2="290" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="290" cy="200" r="8" fill="#5453E3" className="animated-circle" />
+            {/* Bottom Left */}
+            <line x1="140" y1="330" x2="265" y2="255" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="260" cy="260" r="8" fill="#5453E3" className="animated-circle" />
+            {/* Top Right */}
+            <line x1="570" y1="65" x2="455" y2="160" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="455" cy="160" r="8" fill="#5453E3" className="animated-circle" />
+            {/* Middle Right */}
+            <line x1="570" y1="200" x2="455" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="450" cy="200" r="8" fill="#5453E3" className="animated-circle" />
+            {/* Bottom Right */}
+            <line x1="650" y1="320" x2="448" y2="240" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="450" cy="240" r="8" fill="#5453E3" className="animated-circle" />
+          </svg>
+
+          {/* Central Illustration */}
+          <img
+            src="/woman.png"
+            alt="Customer Problem"
+            className="absolute left-1/2 top-1/2 w-64 h-80 object-contain -translate-x-1/2 -translate-y-1/2 z-10"
+          />
+
+          {/* Problem Points - Desktop Only */}
+          <div className="hidden md:block">
+            {/* Top Left */}
+            <div className="absolute left-[-3px] top-[75px] w-40 text-center">
+              <div className="font-medium">Kualitas Kardus Kurang Bagus</div>
             </div>
-            <div className="mt-12 text-center lg:text-left">
-              <Link href="/hubungi-kami">
-                <Button className="bg-indigo hover:bg-indigo/90 text-white font-medium px-6 py-3 rounded-lg">
-                  Konsultasi Masalah Anda
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+            {/* Middle Left */}
+            <div className="absolute left-[-10px] top-1/2 w-40 text-center -translate-y-1/2">
+              <div className="font-medium">Ukuran Tidak Sesuai Kebutuhan</div>
+            </div>
+            {/* Bottom Left */}
+            <div className="absolute left-[-10px] bottom-14 w-40 text-center">
+              <div className="font-medium">Desain dan Cetakan Kurang Menarik</div>
+            </div>
+            {/* Top Right */}
+            <div className="absolute right-12 top-10 w-40 text-center">
+              <div className="font-medium">Sulit Dirakit atau Dilipat</div>
+            </div>
+            {/* Middle Right */}
+            <div className="absolute right-16 top-1/2 w-40 text-center -translate-y-1/2">
+              <div className="font-medium">Harga Tidak Kompetitif</div>
+            </div>
+            {/* Bottom Right */}
+            <div className="absolute right-4 bottom-8 w-56 text-center">
+              <div className="font-medium">Pengiriman Lambat atau Kardus Rusak saat Dikirim</div>
             </div>
           </div>
         </div>
+
+        {/* Mobile Problem List */}
+        <div className="md:hidden w-full max-w-md  space-y-4">
+          <div className="flex items-center space-x-3">
+            <div className="w-2 h-2 rounded-full bg-[#5453E3]"></div>
+            <div className="font-medium">Kualitas Kardus Kurang Bagus</div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-2 h-2 rounded-full bg-[#5453E3]"></div>
+            <div className="font-medium">Ukuran Tidak Sesuai Kebutuhan</div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-2 h-2 rounded-full bg-[#5453E3]"></div>
+            <div className="font-medium">Desain dan Cetakan Kurang Menarik</div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-2 h-2 rounded-full bg-[#5453E3]"></div>
+            <div className="font-medium">Sulit Dirakit atau Dilipat</div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-2 h-2 rounded-full bg-[#5453E3]"></div>
+            <div className="font-medium">Harga Tidak Kompetitif</div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-2 h-2 rounded-full bg-[#5453E3]"></div>
+            <div className="font-medium">Pengiriman Lambat atau Kardus Rusak saat Dikirim</div>
+          </div>
+        </div>
+
+        <button className="mt-12 bg-white border border-gray-300 rounded-full px-8 py-3 shadow-md font-medium hover:bg-gray-100 transition">
+          Kami Siap Membantu Anda
+        </button>
       </section>
 
       {/* Section 4: Portofolio Proyek */}
