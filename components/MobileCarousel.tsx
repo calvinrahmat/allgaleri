@@ -25,7 +25,7 @@ export function MobileCarousel() {
         src={mobileBanners[index].src}
         alt={mobileBanners[index].alt}
         fill
-        className="object-contain transition-all duration-700"
+        className="object-cover transition-all duration-700"
         priority
       />
     </div>
