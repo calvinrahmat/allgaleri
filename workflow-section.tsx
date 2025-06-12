@@ -1,6 +1,6 @@
 export default function WorkflowSection() {
   return (
-    <section className="py-16 px-4 bg-lime">
+    <section className="py-8 px-4 bg-lime">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-4">
