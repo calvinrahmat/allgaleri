@@ -35,7 +35,7 @@ export default function Home() {
             berbagai kebutuhan bisnis Anda
           </p>
           <Link href="/hubungi-kami">
-            <Button className="bg-indigo hover:bg-indigo/90 bg-[#EFF187] text-[#5453E3] font-bold px-8 py-4 rounded-lg ">
+            <Button className="bg-[#EFF187] text-[#5453E3] font-bold px-8 py-6 rounded-lg hover:bg-[#EFF187]">
               CONSULT NOW <ArrowRight className="ml-3 h-5 w-5" />
             </Button>
           </Link>
@@ -94,10 +94,10 @@ export default function Home() {
             <line x1="620" y1="120" x2="514" y2="152" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
             <circle cx="510" cy="152" r="8" fill="#5453E3" className="animated-circle" />
             {/* Middle Right */}
-            <line x1="650" y1="200" x2="520" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <line x1="620" y1="200" x2="520" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
             <circle cx="510" cy="200" r="8" fill="#5453E3" className="animated-circle" />
             {/* Bottom Right */}
-            <line x1="600" y1="300" x2="518" y2="262" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <line x1="610" y1="290" x2="520" y2="260" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
             <circle cx="510" cy="257" r="8" fill="#5453E3" className="animated-circle" />
           </svg>
 
@@ -105,7 +105,7 @@ export default function Home() {
           <img
             src="/woman.png"
             alt="Customer Problem"
-            className="absolute left-1/2 top-1/3 md:top-[80%] w-100 h-100 object-contain -translate-x-1/2 -translate-y-1/2 z-10"
+            className="absolute left-1/2 top-1/3 w-[120%] h-[120%] object-contain -translate-x-1/2 -translate-y-1/2 z-10"
           />
 
           {/* Problem Points - Desktop Only */}
@@ -131,7 +131,7 @@ export default function Home() {
               <div className="font-medium">Harga Tidak Kompetitif</div>
             </div>
             {/* Bottom Right */}
-            <div className="absolute right-[-40px] bottom-16 w-56 text-center">
+            <div className="absolute right-[-50px] bottom-[80px] w-56 text-center">
               <div className="font-medium">Pengiriman Lambat atau Kardus Rusak saat Dikirim</div>
             </div>
           </div>
