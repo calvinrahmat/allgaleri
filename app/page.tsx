@@ -10,6 +10,7 @@ import { PortfolioGallery } from "@/components/portfolio-gallery";
 import Image from "next/image";
 import { HeroLogosMarquee } from "@/components/HeroLogosMarquee";
 import { MobileCarousel } from "@/components/MobileCarousel";
+import WorkflowSection from "@/workflow-section";
 
 export default function Home() {
   return (
@@ -81,56 +82,56 @@ export default function Home() {
           <svg className="absolute inset-0 w-full h-full hidden md:block" style={{ zIndex: 5 }}>
             {/* Dashed lines with circles at the end */}
             {/* Top Left */}
-            <line x1="140" y1="100" x2="300" y2="160" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
-            <circle cx="300" cy="160" r="8" fill="#5453E3" className="animated-circle" />
+            <line x1="120" y1="120" x2="220" y2="143" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="225" cy="144" r="8" fill="#5453E3" className="animated-circle" />
             {/* Middle Left */}
-            <line x1="140" y1="200" x2="290" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
-            <circle cx="290" cy="200" r="8" fill="#5453E3" className="animated-circle" />
+            <line x1="120" y1="200" x2="220" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="220" cy="200" r="8" fill="#5453E3" className="animated-circle" />
             {/* Bottom Left */}
-            <line x1="140" y1="330" x2="265" y2="255" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
-            <circle cx="260" cy="260" r="8" fill="#5453E3" className="animated-circle" />
+            <line x1="120" y1="300" x2="200" y2="260" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="200" cy="260" r="8" fill="#5453E3" className="animated-circle" />
             {/* Top Right */}
-            <line x1="570" y1="65" x2="455" y2="160" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
-            <circle cx="455" cy="160" r="8" fill="#5453E3" className="animated-circle" />
+            <line x1="620" y1="120" x2="514" y2="152" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="510" cy="152" r="8" fill="#5453E3" className="animated-circle" />
             {/* Middle Right */}
-            <line x1="570" y1="200" x2="455" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
-            <circle cx="450" cy="200" r="8" fill="#5453E3" className="animated-circle" />
+            <line x1="650" y1="200" x2="520" y2="200" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="510" cy="200" r="8" fill="#5453E3" className="animated-circle" />
             {/* Bottom Right */}
-            <line x1="650" y1="320" x2="448" y2="240" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
-            <circle cx="450" cy="240" r="8" fill="#5453E3" className="animated-circle" />
+            <line x1="600" y1="300" x2="518" y2="262" stroke="#5453E3" strokeWidth="2" strokeDasharray="8,6" className="animated-dash" />
+            <circle cx="510" cy="257" r="8" fill="#5453E3" className="animated-circle" />
           </svg>
 
           {/* Central Illustration */}
           <img
             src="/woman.png"
             alt="Customer Problem"
-            className="absolute left-1/2 top-1/2 w-64 h-80 object-contain -translate-x-1/2 -translate-y-1/2 z-10"
+            className="absolute left-1/2 top-1/3 md:top-[80%] w-100 h-100 object-contain -translate-x-1/2 -translate-y-1/2 z-10"
           />
 
           {/* Problem Points - Desktop Only */}
           <div className="hidden md:block">
             {/* Top Left */}
-            <div className="absolute left-[-3px] top-[75px] w-40 text-center">
+            <div className="absolute left-[-25px] top-[90px] w-40 text-center">
               <div className="font-medium">Kualitas Kardus Kurang Bagus</div>
             </div>
             {/* Middle Left */}
-            <div className="absolute left-[-10px] top-1/2 w-40 text-center -translate-y-1/2">
+            <div className="absolute left-[-40px] top-1/2 w-40 text-center -translate-y-1/2">
               <div className="font-medium">Ukuran Tidak Sesuai Kebutuhan</div>
             </div>
             {/* Bottom Left */}
-            <div className="absolute left-[-10px] bottom-14 w-40 text-center">
+            <div className="absolute left-[-40px] bottom-16 w-40 text-center">
               <div className="font-medium">Desain dan Cetakan Kurang Menarik</div>
             </div>
             {/* Top Right */}
-            <div className="absolute right-12 top-10 w-40 text-center">
+            <div className="absolute right-[-2px] top-[90px] w-40 text-center">
               <div className="font-medium">Sulit Dirakit atau Dilipat</div>
             </div>
             {/* Middle Right */}
-            <div className="absolute right-16 top-1/2 w-40 text-center -translate-y-1/2">
+            <div className="absolute right-[1px] top-1/2 w-40 text-center -translate-y-1/2">
               <div className="font-medium">Harga Tidak Kompetitif</div>
             </div>
             {/* Bottom Right */}
-            <div className="absolute right-4 bottom-8 w-56 text-center">
+            <div className="absolute right-[-40px] bottom-16 w-56 text-center">
               <div className="font-medium">Pengiriman Lambat atau Kardus Rusak saat Dikirim</div>
             </div>
           </div>
@@ -164,11 +165,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Link href="https://wa.me/6289876543210?text=Halo%20Maxellpack,%20saya%20ingin%20memesan%20kemasan" target="_blank" rel="noopener noreferrer">
-          <button className="mt-12 bg-white border border-gray-300 rounded-full px-8 py-3 shadow-md font-medium hover:bg-gray-100 transition">
-            Kami Siap Membantu Anda
-          </button>
-        </Link>
+      
       </section>
 
       {/* Section 4: Portofolio Proyek */}
@@ -178,26 +175,17 @@ export default function Home() {
             Portofolio
           </h2>
           <PortfolioGallery />
-          <div className="text-center mt-10">
-            <Link href="/portofolio">
-              <Button
-                variant="outline"
-                className="border-indigo text-gray-700 hover:bg-lavender"
-              >
-                Lihat Semua Portofolio
-              </Button>
-            </Link>
-          </div>
+          
         </div>
       </section>
 
       {/* Section 5: Alur Pemesanan */}
       <section className="py-16 px-4 bg-lime">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-3xl font-bold text-center text-gray-800">
             Alur Pemesanan
           </h2>
-          <OrderProcess />
+          <WorkflowSection />
         </div>
       </section>
 

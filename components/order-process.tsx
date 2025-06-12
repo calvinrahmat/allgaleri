@@ -3,161 +3,76 @@ import { Card, CardContent } from "@/components/ui/card"
 const steps = [
   {
     id: 1,
-    title: "Hubungi Admin Sales Kami",
-    description: "Diskusikan kebutuhan kemasan Anda dengan tim kami",
+    description: "Hubungi admin sales kami melalui WhatsApp atau email",
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-indigo"
-      >
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-      </svg>
+      <img src="/alur-1.svg" alt="Admin" className="w-12 h-12 mx-auto" />
     ),
   },
   {
     id: 2,
-    title: "Konsultasikan Kebutuhan Anda",
-    description: "Tim desain kami akan membuat desain sesuai kebutuhan Anda",
+    description: "Konsultasikan kebutuhan packaging Anda",
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-purple-500"
-      >
-        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-        <path d="M2 2l7.586 7.586"></path>
-        <circle cx="11" cy="11" r="2"></circle>
-      </svg>
+      <img src="/alur-2.svg" alt="Konsultasi" className="w-12 h-12 mx-auto" />
     ),
   },
   {
     id: 3,
-    title: "Quotation Proses (Perhitungan untuk Penawaran Harga)",
-    description: "Anda menyetujui desain dan spesifikasi kemasan",
+    description: "Kami akan menghitung dan menginformasikan penawaran harga",
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-green-500"
-      >
-        <polyline points="9 11 12 14 22 4"></polyline>
-        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-      </svg>
+      <img src="/alur-3.svg" alt="Penawaran" className="w-12 h-12 mx-auto" />
     ),
   },
   {
     id: 4,
-    title: "Pembuatan Sampel Setelah Penawaran Harga Disetujui",
-    description: "Kami memproduksi kemasan sesuai dengan spesifikasi yang disetujui",
+    description: "Pembuatan sampel packaging setelah penawaran harga disetujui",
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-blue-500"
-      >
-        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-      </svg>
+      <img src="/alur-4.svg" alt="Sampel" className="w-12 h-12 mx-auto" />
     ),
   },
   {
     id: 5,
-    title: "Setelah Sampel Disetujui, Melakukan Pembayaran DP",
-    description: "Kami mengirimkan pesanan Anda tepat waktu",
+    description: "Setelah sampel akhir disetujui, masuk ke tahap produksi massal",
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-orange-500"
-      >
-        <rect x="1" y="3" width="15" height="13"></rect>
-        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-        <circle cx="5.5" cy="18.5" r="2.5"></circle>
-        <circle cx="18.5" cy="18.5" r="2.5"></circle>
-      </svg>
+      <img src="/alur-5.svg" alt="Produksi" className="w-12 h-12 mx-auto" />
     ),
   },
-  {
-    id: 6,
-    title: "Produksi Massal Berlangsung Selama 10-15 Hari Kerja",
-    description: "Proses produksi massal berlangsung selama 10-15 hari kerja",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-red-500"
-      >
-        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-      </svg>
-    ),
-  },
-]
+];
 
 export function OrderProcess() {
   return (
-    <div className="relative">
-      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
-      <div className="space-y-12 relative">
-        {steps.map((step, index) => (
-          <div key={step.id} className={`flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
-            <div className="md:w-1/2"></div>
-            <div className="flex items-center justify-center">
-              <div className="bg-white rounded-full p-3 shadow-md z-10">{step.icon}</div>
+    <div className="w-full">
+      {/* Desktop: Horizontal Stepper */}
+      <div className="hidden md:flex w-full justify-between items-start relative">
+        {steps.map((step, idx) => (
+          <div key={step.id} className="flex-1 flex flex-col items-center relative">
+            {/* Icon in circle */}
+            <div className="bg-white rounded-full p-4 shadow-md flex items-center justify-center z-10 border border-gray-200">
+              {step.icon}
             </div>
-            <div className="md:w-1/2 mt-4 md:mt-0">
-              <Card className="border-0 shadow-md">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">{step.title}</h3>
-                </CardContent>
-              </Card>
+            {/* Dashed line to next step */}
+            {idx < steps.length - 1 && (
+              <div className="absolute top-1/2 right-0 w-full h-0.5 md:w-[calc(100%+32px)] md:-right-[50%] z-0 flex items-center" style={{ pointerEvents: 'none' }}>
+                <div className="border-t-2 border-dashed border-gray-400 w-full"></div>
+              </div>
+            )}
+            {/* Description */}
+            <div className="mt-6 text-center text-sm md:text-base max-w-[180px] text-gray-700">
+              {step.description}
             </div>
           </div>
         ))}
       </div>
+      {/* Mobile: Vertical List */}
+      <div className="md:hidden flex flex-col gap-8">
+        {steps.map((step) => (
+          <div key={step.id} className="flex items-center gap-4">
+            <div className="bg-white rounded-full p-3 shadow-md border border-gray-200">
+              {step.icon}
+            </div>
+            <div className="text-gray-700 text-sm">{step.description}</div>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }

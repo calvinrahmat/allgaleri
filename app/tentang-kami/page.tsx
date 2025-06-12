@@ -38,10 +38,11 @@ export default function TentangKami() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Maxellpack Company Profile"
+                src="https://www.youtube.com/embed/cP-3ZILDYAk?si=5bGAjXTKxnsz2Wm_"
+                title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
             </div>
@@ -71,91 +72,92 @@ export default function TentangKami() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Mengapa Memilih Maxellpack?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
-                <div className="h-12 w-12 rounded-full bg-lavender flex items-center justify-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-indigo"
-                  >
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">1</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Custom Sesuai Kebutuhan</h3>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Kualitas Terjamin
-                </h3>
                 <p className="text-gray-600">
-                  Kami menggunakan bahan berkualitas tinggi dan proses produksi
-                  yang ketat untuk memastikan setiap produk memenuhi standar
-                  kualitas tertinggi.
+                  Ukuran, Bentuk, Desain dan Bahan bisa disesuaikan 100% dengan karakter produk dan brand kamu.
                 </p>
               </CardContent>
             </Card>
-
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
-                <div className="h-12 w-12 rounded-full bg-lavender flex items-center justify-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-indigo"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">2</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Kuat dan Aman</h3>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Pengiriman Tepat Waktu
-                </h3>
                 <p className="text-gray-600">
-                  Kami memahami pentingnya ketepatan waktu dalam bisnis. Oleh
-                  karena itu, kami berkomitmen untuk mengirimkan pesanan Anda
-                  sesuai jadwal yang disepakati.
+                  Bahan Berkualitas tinggi yang tahan banting, cocok untuk ekspedisi dan pengiriman antar kota bahkan luar pulau
                 </p>
               </CardContent>
             </Card>
-
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
-                <div className="h-12 w-12 rounded-full bg-lavender flex items-center justify-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-indigo"
-                  >
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                  </svg>
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">3</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Tampil Lebih Profesional</h3>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Layanan Pelanggan
-                </h3>
                 <p className="text-gray-600">
-                  Tim layanan pelanggan kami siap membantu Anda dengan
-                  pertanyaan, permintaan, dan dukungan yang Anda butuhkan
-                  sepanjang proses kerja sama.
+                  Bikin pelanggan langsung percaya saat terima paket. 
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">4</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Minimum order Rendah</h3>
+                </div>
+                <p className="text-gray-600">
+                  Mulai dari ratusan PCS saja sudah bisa produksi custom kardusmu. Cocok untuk UMKM, Dropshipper dan brand yang baru memulai bisnis
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">5</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Harga Terjangkau, Kualitas Maksimal</h3>
+                </div>
+                <p className="text-gray-600">
+                  Kami bantu efisiensi bisnis kamu tanpa harus keliatan 'Murahan'. Hemat tanpa kompromi kualitas.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">6</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Cetak Logo dan Desain Ekslusif</h3>
+                </div>
+                <p className="text-gray-600">
+                  Bisa request cetak nama brand/logo supaya produk kamu terlihat lebih premium dan mudah diingat.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">7</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Fast Response dan Free Konsultasi</h3>
+                </div>
+                <p className="text-gray-600">
+                  Tim kami siap bantu hitung kebutuhan, pilih bahan, dan rekomendasi ukuran terbaik. Gratis!
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">8</span>
+                  <h3 className="text-xl font-semibold text-gray-800">Sudah dipercaya ratusan Brand Local</h3>
+                </div>
+                <p className="text-gray-600">
+                  Dari UMKM sampai Brand Besar sudah pakai Maxellpack untuk memperkuat citra produk mereka melalui kemasan yang berkualitas.
                 </p>
               </CardContent>
             </Card>
