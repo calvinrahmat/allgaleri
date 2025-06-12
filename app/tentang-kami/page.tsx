@@ -76,7 +76,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">1</span>
                   <h3 className="text-xl font-semibold text-gray-800">Custom Sesuai Kebutuhan</h3>
                 </div>
                 <p className="text-gray-600">
@@ -87,7 +86,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">2</span>
                   <h3 className="text-xl font-semibold text-gray-800">Kuat dan Aman</h3>
                 </div>
                 <p className="text-gray-600">
@@ -98,7 +96,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">3</span>
                   <h3 className="text-xl font-semibold text-gray-800">Tampil Lebih Profesional</h3>
                 </div>
                 <p className="text-gray-600">
@@ -109,7 +106,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">4</span>
                   <h3 className="text-xl font-semibold text-gray-800">Minimum order Rendah</h3>
                 </div>
                 <p className="text-gray-600">
@@ -120,7 +116,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">5</span>
                   <h3 className="text-xl font-semibold text-gray-800">Harga Terjangkau, Kualitas Maksimal</h3>
                 </div>
                 <p className="text-gray-600">
@@ -131,7 +126,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">6</span>
                   <h3 className="text-xl font-semibold text-gray-800">Cetak Logo dan Desain Ekslusif</h3>
                 </div>
                 <p className="text-gray-600">
@@ -142,7 +136,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">7</span>
                   <h3 className="text-xl font-semibold text-gray-800">Fast Response dan Free Konsultasi</h3>
                 </div>
                 <p className="text-gray-600">
@@ -153,7 +146,6 @@ export default function TentangKami() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <span className="h-8 w-8 flex items-center justify-center rounded-full bg-indigo text-white font-bold mr-3">8</span>
                   <h3 className="text-xl font-semibold text-gray-800">Sudah dipercaya ratusan Brand Local</h3>
                 </div>
                 <p className="text-gray-600">
