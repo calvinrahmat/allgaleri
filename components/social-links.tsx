@@ -18,6 +18,7 @@ const socialMedia = [
     ),
     url: "https://instagram.com/maxellpack",
     color: "bg-gradient-to-r from-purple-500 to-pink-500",
+    hoverColor: "hover:bg-purple-500",
   },
 
   {
@@ -36,6 +37,7 @@ const socialMedia = [
     ),
     url: "https://www.youtube.com/embed/cP-3ZILDYAk?si=5bGAjXTKxnsz2Wm_",
     color: "bg-red-600",
+    hoverColor: "hover:bg-red-500",
   },
 ];
 
@@ -61,7 +63,8 @@ const ecommerce = [
       </svg>
     ),
     url: "https://tokopedia.com/maxellpack",
-    color: "bg-green-500",
+    color: "bg-green-600",
+    hoverColor: "hover:bg-green-500",
   },
   {
     id: 2,
@@ -84,7 +87,8 @@ const ecommerce = [
       </svg>
     ),
     url: "https://shopee.co.id/maxellpack",
-    color: "bg-orange-500",
+    color: "bg-orange-600",
+    hoverColor: "hover:bg-orange-500",
   },
 ];
 
@@ -104,7 +108,7 @@ export function SocialLinks() {
               rel="noopener noreferrer"
             >
               <Button
-                className={`w-full text-white ${social.color} hover:opacity-90`}
+                className={`w-full text-white ${social.color} ${social.hoverColor}`}
               >
                 <span className="mr-2">{social.icon}</span>
                 {social.name}
@@ -125,7 +129,7 @@ export function SocialLinks() {
               rel="noopener noreferrer"
             >
               <Button
-                className={`w-full text-white ${shop.color} hover:opacity-90`}
+                className={`w-full text-white ${shop.color} ${shop.hoverColor}`}
               >
                 <span className="mr-2">{shop.icon}</span>
                 {shop.name}

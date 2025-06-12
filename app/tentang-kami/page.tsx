@@ -164,63 +164,35 @@ export default function TentangKami() {
             Keunggulan Kami
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-start mb-4">
-                <CheckCircle className="h-6 w-6 text-indigo mr-3 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    Desain Custom
-                  </h3>
-                  <p className="text-gray-600">
-                    Tim desain kami akan membantu Anda menciptakan kemasan yang
-                    sesuai dengan brand dan kebutuhan produk Anda.
-                  </p>
-                </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Desain Custom</h3>
+                <p className="text-gray-600">Tim desain kami akan membantu Anda menciptakan kemasan yang sesuai dengan brand dan kebutuhan produk Anda.</p>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-start mb-4">
-                <CheckCircle className="h-6 w-6 text-indigo mr-3 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    Bahan Berkualitas
-                  </h3>
-                  <p className="text-gray-600">
-                    Kami hanya menggunakan bahan berkualitas tinggi untuk
-                    memastikan kemasan Anda tahan lama dan aman.
-                  </p>
-                </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Bahan Berkualitas</h3>
+                <p className="text-gray-600">Kami hanya menggunakan bahan berkualitas tinggi untuk memastikan kemasan Anda tahan lama dan aman.</p>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-start mb-4">
-                <CheckCircle className="h-6 w-6 text-indigo mr-3 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    Harga Kompetitif
-                  </h3>
-                  <p className="text-gray-600">
-                    Kami menawarkan harga yang kompetitif tanpa mengorbankan
-                    kualitas produk dan layanan.
-                  </p>
-                </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Harga Kompetitif</h3>
+                <p className="text-gray-600">Kami menawarkan harga yang kompetitif tanpa mengorbankan kualitas produk dan layanan.</p>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-start mb-4">
-                <CheckCircle className="h-6 w-6 text-indigo mr-3 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    Ramah Lingkungan
-                  </h3>
-                  <p className="text-gray-600">
-                    Kami berkomitmen untuk menggunakan bahan dan proses produksi
-                    yang ramah lingkungan.
-                  </p>
-                </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Ramah Lingkungan</h3>
+                <p className="text-gray-600">Kami berkomitmen untuk menggunakan bahan dan proses produksi yang ramah lingkungan.</p>
               </div>
             </div>
           </div>
