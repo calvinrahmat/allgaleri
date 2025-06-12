@@ -16,7 +16,8 @@ export default function WorkflowSection() {
             </div>
             {/* Step 1 */}
             <div className="flex flex-col items-center flex-1 relative z-10 max-w-48">
-              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200" style={{ minHeight: '7rem' }}>
+              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative" style={{ minHeight: '7rem' }}>
+                <span className="absolute -top-2 -left-2 w-8 h-8 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-lg border-2 border-[#5453E3] shadow">1</span>
                 <img src="/ICON_HUBUNGI_ADMIN.png" alt="Hubungi Admin" className="w-30 h-30" />
               </div>
               <div className="w-0.5 h-16 border-l-2 border-dotted border-gray-400 my-2"></div>
@@ -24,7 +25,8 @@ export default function WorkflowSection() {
             </div>
             {/* Step 2 */}
             <div className="flex flex-col items-center flex-1 relative z-10 max-w-48">
-              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200" style={{ minHeight: '7rem' }}>
+              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative" style={{ minHeight: '7rem' }}>
+                <span className="absolute -top-2 -left-2 w-8 h-8 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-lg border-2 border-[#5453E3] shadow">2</span>
                 <img src="/ICON_CONSULT.png" alt="Konsultasi" className="w-30 h-30" />
               </div>
               <div className="w-0.5 h-16 border-l-2 border-dotted border-gray-400 my-2"></div>
@@ -32,7 +34,8 @@ export default function WorkflowSection() {
             </div>
             {/* Step 3 */}
             <div className="flex flex-col items-center flex-1 relative z-10 max-w-48">
-              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200" style={{ minHeight: '7rem' }}>
+              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative" style={{ minHeight: '7rem' }}>
+                <span className="absolute -top-2 -left-2 w-8 h-8 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-lg border-2 border-[#5453E3] shadow">3</span>
                 <img src="/ICON_QUOTATION.png" alt="Quotation" className="w-30 h-30" />
               </div>
               <div className="w-0.5 h-16 border-l-2 border-dotted border-gray-400 my-2"></div>
@@ -40,7 +43,8 @@ export default function WorkflowSection() {
             </div>
             {/* Step 4 */}
             <div className="flex flex-col items-center flex-1 relative z-10 max-w-48">
-              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200" style={{ minHeight: '7rem' }}>
+              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative" style={{ minHeight: '7rem' }}>
+                <span className="absolute -top-2 -left-2 w-8 h-8 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-lg border-2 border-[#5453E3] shadow">4</span>
                 <img src="/ICON_SAMPLE.png" alt="Sample" className="w-30 h-30" />
               </div>
               <div className="w-0.5 h-16 border-l-2 border-dotted border-gray-400 my-2"></div>
@@ -48,7 +52,8 @@ export default function WorkflowSection() {
             </div>
             {/* Step 5 */}
             <div className="flex flex-col items-center flex-1 relative z-10 max-w-48">
-              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200" style={{ minHeight: '7rem' }}>
+              <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative" style={{ minHeight: '7rem' }}>
+                <span className="absolute -top-2 -left-2 w-8 h-8 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-lg border-2 border-[#5453E3] shadow">5</span>
                 <img src="/ICON_PRODUKSI.png" alt="Produksi" className="w-30 h-30" />
               </div>
               <div className="w-0.5 h-16 border-l-2 border-dotted border-gray-400 my-2"></div>
@@ -61,7 +66,8 @@ export default function WorkflowSection() {
             {/* Step 1 */}
             <div className="flex items-start space-x-4 relative mt-8">
               <div className="flex-shrink-0 relative">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative">
+                  <span className="absolute -top-2 -left-2 w-6 h-6 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-base">1</span>
                   <img src="/ICON_HUBUNGI_ADMIN.png" alt="Hubungi Admin" className="w-30 h-30" />
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-0.5 h-8 border-l-2 border-dotted border-gray-400"></div>
@@ -73,7 +79,8 @@ export default function WorkflowSection() {
             {/* Step 2 */}
             <div className="flex items-start space-x-4 relative">
               <div className="flex-shrink-0 relative">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative">
+                  <span className="absolute -top-2 -left-2 w-6 h-6 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-base">2</span>
                   <img src="/ICON_CONSULT.png" alt="Konsultasi" className="w-30 h-30" />
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-0.5 h-8 border-l-2 border-dotted border-gray-400"></div>
@@ -85,7 +92,8 @@ export default function WorkflowSection() {
             {/* Step 3 */}
             <div className="flex items-start space-x-4 relative">
               <div className="flex-shrink-0 relative">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative">
+                  <span className="absolute -top-2 -left-2 w-6 h-6 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-base">3</span>
                   <img src="/ICON_QUOTATION.png" alt="Quotation" className="w-30 h-30" />
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-0.5 h-8 border-l-2 border-dotted border-gray-400"></div>
@@ -97,7 +105,8 @@ export default function WorkflowSection() {
             {/* Step 4 */}
             <div className="flex items-start space-x-4 relative">
               <div className="flex-shrink-0 relative">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative">
+                  <span className="absolute -top-2 -left-2 w-6 h-6 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-base">4</span>
                   <img src="/ICON_SAMPLE.png" alt="Sample" className="w-30 h-30" />
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-0.5 h-8 border-l-2 border-dotted border-gray-400"></div>
@@ -109,7 +118,8 @@ export default function WorkflowSection() {
             {/* Step 5 */}
             <div className="flex items-start space-x-4 relative">
               <div className="flex-shrink-0 relative">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 relative">
+                  <span className="absolute -top-2 -left-2 w-6 h-6 bg-[#5453E3] text-white rounded-full flex items-center justify-center font-bold text-base">5</span>
                   <img src="/ICON_PRODUKSI.png" alt="Produksi" className="w-30 h-30" />
                 </div>
               </div>
