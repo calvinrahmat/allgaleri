@@ -38,10 +38,10 @@ export default function Navbar() {
                 Beranda
               </Link>
               <Link
-                href="/tentang-kami"
+                href="/produk"
                 className="border-transparent text-[#5453E3]  hover:border-indigo inline-flex items-center px-1 pt-1 border-b-2 font-medium"
               >
-                Tentang Kami
+                Produk
               </Link>
             
             </nav>
@@ -114,15 +114,15 @@ export default function Navbar() {
               Beranda
             </Link>
             <Link
-              href="/tentang-kami"
+              href="/produk"
               className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
-                isActive("/tentang-kami")
+                isActive("/produk")
                   ? "bg-lavender border-indigo text-indigo"
                   : "border-transparent text-[#5453E3] hover:bg-gray-50 hover:border-gray-300"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Tentang Kami
+              Produk
             </Link>
             <Link
               href="/hubungi-kami"

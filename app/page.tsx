@@ -2,15 +2,15 @@ import Link from "next/link";
 import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel } from "@/components/carousel";
-import { ClientLogos } from "@/components/client-logos";
 import { ProductCard } from "@/components/product-card";
-import { OrderProcess } from "@/components/order-process";
 import { SocialLinks } from "@/components/social-links";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
 import Image from "next/image";
 import { HeroLogosMarquee } from "@/components/HeroLogosMarquee";
 import { MobileCarousel } from "@/components/MobileCarousel";
 import WorkflowSection from "@/workflow-section";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -168,6 +168,170 @@ export default function Home() {
       
       </section>
 
+      {/* Tentang Kami - Hero Section */}
+      <section className="bg-lavender py-16 px-4">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h1 className="text-4xl font-bold mb-6 text-gray-800">
+              Tentang Maxellpack
+            </h1>
+            <p className="text-lg text-gray-700 mb-8">
+              Maxellpack adalah perusahaan yang berfokus pada pembuatan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis. Dengan pengalaman bertahun-tahun, kami telah menjadi mitra terpercaya bagi banyak brand ternama di Indonesia.
+            </p>
+            <Link href="/hubungi-kami">
+              <Button className="bg-indigo hover:bg-indigo/90 text-white">
+                Hubungi Kami
+              </Button>
+            </Link>
+          </div>
+          <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/cP-3ZILDYAk?si=5bGAjXTKxnsz2Wm_"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      {/* Mengapa Maxellpack */}
+      <section className="py-16 px-4 bg-lime">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Mengapa Memilih Maxellpack?
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Custom Sesuai Kebutuhan</h3>
+                </div>
+                <p className="text-gray-600">
+                  Ukuran, Bentuk, Desain dan Bahan bisa disesuaikan 100% dengan karakter produk dan brand kamu.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Kuat dan Aman</h3>
+                </div>
+                <p className="text-gray-600">
+                  Bahan Berkualitas tinggi yang tahan banting, cocok untuk ekspedisi dan pengiriman antar kota bahkan luar pulau
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Tampil Lebih Profesional</h3>
+                </div>
+                <p className="text-gray-600">
+                  Bikin pelanggan langsung percaya saat terima paket. 
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Minimum order Rendah</h3>
+                </div>
+                <p className="text-gray-600">
+                  Mulai dari ratusan PCS saja sudah bisa produksi custom kardusmu. Cocok untuk UMKM, Dropshipper dan brand yang baru memulai bisnis
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Harga Terjangkau, Kualitas Maksimal</h3>
+                </div>
+                <p className="text-gray-600">
+                  Kami bantu efisiensi bisnis kamu tanpa harus keliatan 'Murahan'. Hemat tanpa kompromi kualitas.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Cetak Logo dan Desain Ekslusif</h3>
+                </div>
+                <p className="text-gray-600">
+                  Bisa request cetak nama brand/logo supaya produk kamu terlihat lebih premium dan mudah diingat.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Fast Response dan Free Konsultasi</h3>
+                </div>
+                <p className="text-gray-600">
+                  Tim kami siap bantu hitung kebutuhan, pilih bahan, dan rekomendasi ukuran terbaik. Gratis!
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white shadow-md border-0">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800">Sudah dipercaya ratusan Brand Local</h3>
+                </div>
+                <p className="text-gray-600">
+                  Dari UMKM sampai Brand Besar sudah pakai Maxellpack untuk memperkuat citra produk mereka melalui kemasan yang berkualitas.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Keunggulan Kami */}
+      <section className="py-16 px-4 bg-lavender">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Keunggulan Kami
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Desain Custom</h3>
+                <p className="text-gray-600">Tim desain kami akan membantu Anda menciptakan kemasan yang sesuai dengan brand dan kebutuhan produk Anda.</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Bahan Berkualitas</h3>
+                <p className="text-gray-600">Kami hanya menggunakan bahan berkualitas tinggi untuk memastikan kemasan Anda tahan lama dan aman.</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Harga Kompetitif</h3>
+                <p className="text-gray-600">Kami menawarkan harga yang kompetitif tanpa mengorbankan kualitas produk dan layanan.</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Ramah Lingkungan</h3>
+                <p className="text-gray-600">Kami berkomitmen untuk menggunakan bahan dan proses produksi yang ramah lingkungan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 4: Portofolio Proyek */}
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-7xl mx-auto">
@@ -195,33 +359,35 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Lokasi Kami
           </h2>
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.035313943259!2d106.72282017903063!3d-6.125950244213389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d54d05fd783%3A0xe9d6031cf3d04ca!2sPT%20MAXELL%20PETROASIA%20INDONESIA!5e0!3m2!1sen!2sid!4v1748506343752!5m2!1sen!2sid"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              title="Lokasi Maxellpack"
-            ></iframe>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <h3 className="text-xl font-semibold text-center mb-2 text-gray-800">PABRIK PRODUKSI</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.23644422461!2d106.53754468161617!3d-6.232530144914096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd0027042631%3A0x486838918ab07de8!2sPT.%20Maxell%20Sukses%20Gemilang!5e0!3m2!1sen!2sid!4v1749800026893!5m2!1sen!2sid"
+                width="100%"
+                height="350"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Lokasi Pabrik Maxellpack"
+              ></iframe>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <h3 className="text-xl font-semibold text-center mb-2 text-gray-800">KANTOR PUSAT</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.027745358406!2d106.7251174754024!3d-6.126968660076136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a02ab937a1c13%3A0x3d3fdd8936e09d01!2sMaxellpack!5e0!3m2!1sen!2sid!4v1749799817720!5m2!1sen!2sid"
+                width="100%"
+                height="350"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Lokasi Kantor Maxellpack"
+              ></iframe>
+            </div>
           </div>
-          <div className="mt-8 bg-white p-6 rounded-lg shadow-md">
-            <div className="flex items-start mb-4">
-              <MapPin className="h-5 w-5 text-indigo mr-2 mt-1" />
-              <p className="text-gray-700">
-                Jl. Kencana Raya No.C1 No.5 Jakarta
-              </p>
-            </div>
-            <div className="flex items-start mb-4">
-              <Phone className="h-5 w-5 text-indigo mr-2 mt-1" />
-              <p className="text-gray-700">+62 812 3456 7890</p>
-            </div>
-            <div className="flex items-start">
-              <Mail className="h-5 w-5 text-indigo mr-2 mt-1" />
-              <p className="text-gray-700">info@maxellpack.com</p>
-            </div>
-          </div>
+          
         </div>
       </section>
 

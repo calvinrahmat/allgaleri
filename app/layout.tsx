@@ -57,7 +57,7 @@ export default function RootLayout({
                     </li>
                     <li>
                       <Link
-                        href="/tentang-kami"
+                        href="/produk"
                         className="text-gray-300 hover:text-white"
                       >
                         Tentang Kami

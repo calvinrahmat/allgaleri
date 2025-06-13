@@ -197,12 +197,13 @@ export default function HubungiKami() {
           </h2>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.035313943259!2d106.72282017903063!3d-6.125950244213389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d54d05fd783%3A0xe9d6031cf3d04ca!2sPT%20MAXELL%20PETROASIA%20INDONESIA!5e0!3m2!1sen!2sid!4v1748506343752!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.027745358406!2d106.7251174754024!3d-6.126968660076136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a02ab937a1c13%3A0x3d3fdd8936e09d01!2sMaxellpack!5e0!3m2!1sen!2sid!4v1749799817720!5m2!1sen!2sid"
               width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
               title="Lokasi Maxellpack"
             ></iframe>
           </div>
