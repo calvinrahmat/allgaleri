@@ -20,7 +20,24 @@ const socialMedia = [
     color: "bg-gradient-to-r from-purple-500 to-pink-500",
     hoverColor: "hover:bg-purple-500",
   },
-
+  {
+    id: 2,
+    name: "TikTok",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path d="M12.75 2a.75.75 0 0 1 .75.75v13.5a3.75 3.75 0 1 1-3.75-3.75.75.75 0 0 1 0 1.5 2.25 2.25 0 1 0 2.25 2.25V2.75A.75.75 0 0 1 12.75 2zm4.5 1.5a.75.75 0 0 1 .75.75c0 2.485 2.015 4.5 4.5 4.5a.75.75 0 0 1 0 1.5 6 6 0 0 1-6-6 .75.75 0 0 1 .75-.75z" />
+      </svg>
+    ),
+    url: "https://www.tiktok.com/@maxellpack?_t=ZS-8xF21OPHFth&_r=1",
+    color: "bg-black",
+    hoverColor: "hover:bg-gray-800",
+  },
   {
     id: 4,
     name: "YouTube",
