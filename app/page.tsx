@@ -91,7 +91,7 @@ export default function Home() {
         <HeroLogosMarquee />
       </section>
 
-      Section 2: Produk Kami
+      {/* Section 2: Produk Kami */}
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
