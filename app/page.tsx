@@ -27,7 +27,7 @@ export default function Home() {
     {
       slug: "kardus-standar",
       name: "Kardus Standar",
-      images: ["/products/Kardus Standar.png"],
+      images: ["/products/kardus-standar.png"],
       suitableFor: "Cocok untuk packaging produk custom, retail, dan pengiriman",
       description: "Kardus serbaguna dengan spesifikasi yang dapat disesuaikan untuk berbagai kebutuhan bisnis Anda.",
       details: "Kardus Standar kami menawarkan fleksibilitas dalam ukuran, desain, dan bahan, sehingga cocok untuk berbagai jenis produk. Solusi ideal untuk packaging custom, retail, dan pengiriman, dengan kualitas material yang terjamin untuk menjaga keamanan produk Anda."
@@ -35,7 +35,7 @@ export default function Home() {
     {
       slug: "kardus-die-cut",
       name: "Kardus Die Cut",
-      images: ["/products/Kardus Die Cut.png"],
+      images: ["/products/kardus-die-cut.png"],
       suitableFor: "Cocok untuk packaging makanan takeaway",
       description: "Kardus dengan desain die cut yang presisi, cocok untuk kemasan makanan dan produk takeaway.",
       details: "Kardus Die Cut dirancang khusus untuk kebutuhan bisnis kuliner, memberikan tampilan menarik sekaligus menjaga higienitas makanan. Mudah dirakit, kuat, dan dapat dicetak dengan branding usaha Anda untuk meningkatkan daya tarik produk."
@@ -43,7 +43,7 @@ export default function Home() {
     {
       slug: "kardus-lembaran",
       name: "Kardus Lembaran",
-      images: ["/products/Kardus Lembaran.png"],
+      images: ["/products/kardus-lembaran.png"],
       suitableFor: "Cocok untuk kemasan premium dan ramah lingkungan",
       description: "Lembaran kardus berkualitas tinggi untuk solusi kemasan premium dan ramah lingkungan.",
       details: "Kardus Lembaran kami terbuat dari bahan yang kokoh dan eco-friendly, sangat cocok untuk packaging premium, toko retail, maupun event. Dapat dicustom sesuai kebutuhan, memberikan kesan eksklusif dan mendukung citra ramah lingkungan brand Anda."
@@ -51,7 +51,7 @@ export default function Home() {
     {
       slug: "kardus-custom",
       name: "Kardus Custom",
-      images: ["/products/Kardus Custom.png"],
+      images: ["/products/kardus-custom.png"],
       suitableFor: "Cocok untuk ekspedisi dan e-commerce",
       description: "Kardus custom yang dirancang khusus untuk kebutuhan ekspedisi dan e-commerce.",
       details: "Kardus Custom kami memberikan perlindungan maksimal untuk barang kiriman Anda. Tersedia dalam berbagai ukuran dan ketebalan, sangat cocok untuk pengiriman ekspedisi dan bisnis online. Dapat dicetak dengan logo atau desain brand Anda untuk meningkatkan profesionalisme pengiriman."
