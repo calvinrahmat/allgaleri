@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,50 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 export default function Home() {
+  type Product = {
+    slug: string;
+    name: string;
+    images: string[];
+    suitableFor: string;
+    description: string;
+    details: string;
+  };
+
+  const products: Product[] = [
+    {
+      slug: "kardus-standar",
+      name: "Kardus Standar",
+      images: ["/products/Kardus Standar.png"],
+      suitableFor: "Cocok untuk packaging produk custom, retail, dan pengiriman",
+      description: "Kardus serbaguna dengan spesifikasi yang dapat disesuaikan untuk berbagai kebutuhan bisnis Anda.",
+      details: "Kardus Standar kami menawarkan fleksibilitas dalam ukuran, desain, dan bahan, sehingga cocok untuk berbagai jenis produk. Solusi ideal untuk packaging custom, retail, dan pengiriman, dengan kualitas material yang terjamin untuk menjaga keamanan produk Anda."
+    },
+    {
+      slug: "kardus-die-cut",
+      name: "Kardus Die Cut",
+      images: ["/products/Kardus Die Cut.png"],
+      suitableFor: "Cocok untuk packaging makanan takeaway",
+      description: "Kardus dengan desain die cut yang presisi, cocok untuk kemasan makanan dan produk takeaway.",
+      details: "Kardus Die Cut dirancang khusus untuk kebutuhan bisnis kuliner, memberikan tampilan menarik sekaligus menjaga higienitas makanan. Mudah dirakit, kuat, dan dapat dicetak dengan branding usaha Anda untuk meningkatkan daya tarik produk."
+    },
+    {
+      slug: "kardus-lembaran",
+      name: "Kardus Lembaran",
+      images: ["/products/Kardus Lembaran.png"],
+      suitableFor: "Cocok untuk kemasan premium dan ramah lingkungan",
+      description: "Lembaran kardus berkualitas tinggi untuk solusi kemasan premium dan ramah lingkungan.",
+      details: "Kardus Lembaran kami terbuat dari bahan yang kokoh dan eco-friendly, sangat cocok untuk packaging premium, toko retail, maupun event. Dapat dicustom sesuai kebutuhan, memberikan kesan eksklusif dan mendukung citra ramah lingkungan brand Anda."
+    },
+    {
+      slug: "kardus-custom",
+      name: "Kardus Custom",
+      images: ["/products/Kardus Custom.png"],
+      suitableFor: "Cocok untuk ekspedisi dan e-commerce",
+      description: "Kardus custom yang dirancang khusus untuk kebutuhan ekspedisi dan e-commerce.",
+      details: "Kardus Custom kami memberikan perlindungan maksimal untuk barang kiriman Anda. Tersedia dalam berbagai ukuran dan ketebalan, sangat cocok untuk pengiriman ekspedisi dan bisnis online. Dapat dicetak dengan logo atau desain brand Anda untuk meningkatkan profesionalisme pengiriman."
+    }
+  ];
+
   return (
     <main className="min-h-screen bg-lavender">
       {/* Section 1: Welcome Banner */}
@@ -46,28 +91,21 @@ export default function Home() {
         <HeroLogosMarquee />
       </section>
 
-      {/* Section 2: Produk Kami */}
+      Section 2: Produk Kami
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Produk Kami
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProductCard
-              title="Kardus Custom"
-              description="Kardus custom dengan berbagai ukuran dan desain sesuai kebutuhan"
-              imageSrc="/box_4.png"
-            />
-            <ProductCard
-              title="Kemasan Makanan"
-              description="Kemasan makanan food grade yang aman dan menarik"
-              imageSrc="/box_10.png"
-            />
-            <ProductCard
-              title="Kemasan Retail"
-              description="Kemasan retail yang eye-catching untuk meningkatkan nilai produk"
-              imageSrc="/box_3.png"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.map((product) => (
+              <ProductCard
+                key={product.slug}
+                title={product.name}
+                description={product.description}
+                imageSrc={product.images[0]}
+              />
+            ))}
           </div>
         </div>
       </section>

@@ -14,6 +14,11 @@ const logos = [
   { src: "/clients/nippon_paint.png", alt: "Nippon Paint" },
   { src: "/clients/bank_ina.png", alt: "Bank INA" },
   { src: "/clients/kimia_farma.png", alt: "Kimia Farma" },
+  { src: "/clients/andnic-bakery.jpeg", alt: "Andnic Bakery" },
+  { src: "/clients/arkais.jpeg", alt: "Arkais" },
+  { src: "/clients/gulali_books.jpeg", alt: "Gulali Books" },
+  { src: "/clients/maeko.jpeg", alt: "Maeko" },
+  { src: "/clients/natural-farm.jpeg", alt: "Natural Farm" }
 ];
 
 export function HeroLogosMarquee() {

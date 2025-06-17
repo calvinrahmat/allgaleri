@@ -46,7 +46,7 @@ export default function HubungiKami() {
                             terbaik.
                           </p>
                           <a
-                            href="https://wa.me/6281234567890?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan"
+                            href="https://wa.me/6281292773973?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -78,7 +78,7 @@ export default function HubungiKami() {
                             untuk memproses pesanan Anda dengan cepat.
                           </p>
                           <a
-                            href="https://wa.me/6289876543210?text=Halo%20Maxellpack,%20saya%20ingin%20memesan%20kemasan"
+                            href="https://wa.me/6285171119019?text=Halo%20Maxellpack,%20saya%20ingin%20memesan%20kardus"
                             target="_blank"
                             rel="noopener noreferrer"
                           >

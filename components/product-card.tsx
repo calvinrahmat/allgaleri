@@ -17,7 +17,7 @@ export function ProductCard({
 }: ProductCardProps) {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-lg">
-      <div className="relative h-48">
+      <div className="relative h-64">
         <Image
           src={imageSrc || "/placeholder.svg"}
           alt={title}

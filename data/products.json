@@ -1,34 +1,34 @@
 [
   {
+    "slug": "kardus-standar",
+    "name": "Kardus Standar",
+    "images": ["/products/Kardus Standar.png"],
+    "suitableFor": "Cocok untuk packaging produk custom, retail, dan pengiriman",
+    "description": "Kardus serbaguna dengan spesifikasi yang dapat disesuaikan untuk berbagai kebutuhan bisnis Anda.",
+    "details": "Kardus Standar kami menawarkan fleksibilitas dalam ukuran, desain, dan bahan, sehingga cocok untuk berbagai jenis produk. Solusi ideal untuk packaging custom, retail, dan pengiriman, dengan kualitas material yang terjamin untuk menjaga keamanan produk Anda."
+  },
+  {
+    "slug": "kardus-die-cut",
+    "name": "Kardus Die Cut",
+    "images": ["/products/Kardus Die Cut.png"],
+    "suitableFor": "Cocok untuk packaging makanan takeaway",
+    "description": "Kardus dengan desain die cut yang presisi, cocok untuk kemasan makanan dan produk takeaway.",
+    "details": "Kardus Die Cut dirancang khusus untuk kebutuhan bisnis kuliner, memberikan tampilan menarik sekaligus menjaga higienitas makanan. Mudah dirakit, kuat, dan dapat dicetak dengan branding usaha Anda untuk meningkatkan daya tarik produk."
+  },
+  {
+    "slug": "kardus-lembaran",
+    "name": "Kardus Lembaran",
+    "images": ["/products/Kardus Lembaran.png"],
+    "suitableFor": "Cocok untuk kemasan premium dan ramah lingkungan",
+    "description": "Lembaran kardus berkualitas tinggi untuk solusi kemasan premium dan ramah lingkungan.",
+    "details": "Kardus Lembaran kami terbuat dari bahan yang kokoh dan eco-friendly, sangat cocok untuk packaging premium, toko retail, maupun event. Dapat dicustom sesuai kebutuhan, memberikan kesan eksklusif dan mendukung citra ramah lingkungan brand Anda."
+  },
+  {
     "slug": "kardus-custom",
     "name": "Kardus Custom",
-    "images": ["/images/product-box1.jpg", "/images/product-box2.jpg"],
-    "suitableFor": "Cocok untuk packaging produk custom, retail, dan pengiriman",
-    "description": "Kardus dengan ukuran, desain, dan bahan sesuai kebutuhan brand Anda.",
-    "details": "Kardus custom kami dibuat dari bahan berkualitas tinggi, dapat dicetak dengan desain brand Anda, dan tersedia dalam berbagai ukuran sesuai kebutuhan bisnis Anda. Cocok untuk kemasan produk retail, pengiriman, dan branding."
-  },
-  {
-    "slug": "box-makanan",
-    "name": "Box Makanan",
-    "images": ["/images/product-box2.jpg", "/images/product-box3.jpg"],
-    "suitableFor": "Cocok untuk packaging makanan takeaway",
-    "description": "Aman untuk makanan, desain menarik, cocok untuk bisnis kuliner.",
-    "details": "Packaging lunch box ini memastikan produk/makanan Anda terjaga higienitasnya serta memberikan kemudahan bagi customer untuk menikmati makanan/produk Anda."
-  },
-  {
-    "slug": "paper-bag",
-    "name": "Paper Bag",
-    "images": ["/images/product-box3.jpg", "/images/product-box4.jpg"],
-    "suitableFor": "Cocok untuk kemasan premium dan ramah lingkungan",
-    "description": "Tas kertas custom untuk kemasan premium dan ramah lingkungan.",
-    "details": "Paper bag custom kami ramah lingkungan, kuat, dan elegan. Cocok untuk toko retail, event, dan promosi brand. Tersedia dalam berbagai ukuran dan desain."
-  },
-  {
-    "slug": "dus-pengiriman",
-    "name": "Dus Pengiriman",
-    "images": ["/images/product-box4.jpg", "/images/product-box1.jpg"],
+    "images": ["/products/Kardus Custom.png"],
     "suitableFor": "Cocok untuk ekspedisi dan e-commerce",
-    "description": "Solusi pengiriman aman dan kuat untuk ekspedisi dan e-commerce.",
-    "details": "Dus pengiriman kami dirancang untuk melindungi barang selama proses pengiriman. Tersedia dalam berbagai ukuran dan ketebalan sesuai kebutuhan ekspedisi dan e-commerce."
+    "description": "Kardus custom yang dirancang khusus untuk kebutuhan ekspedisi dan e-commerce.",
+    "details": "Kardus Custom kami memberikan perlindungan maksimal untuk barang kiriman Anda. Tersedia dalam berbagai ukuran dan ketebalan, sangat cocok untuk pengiriman ekspedisi dan bisnis online. Dapat dicetak dengan logo atau desain brand Anda untuk meningkatkan profesionalisme pengiriman."
   }
 ] 
