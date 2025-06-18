@@ -307,7 +307,7 @@ export default function Home() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Fast Response dan Free Konsultasi</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Respon Cepat dan Gratis Konsultasi</h3>
                 </div>
                 <p className="text-gray-600">
                   Tim kami siap bantu hitung kebutuhan, pilih bahan, dan rekomendasi ukuran terbaik. Gratis!

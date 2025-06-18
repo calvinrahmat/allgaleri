@@ -8,7 +8,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Welcome to Maxellpack",
   description:
-    "Innovative packaging solutions tailored to your business",
+    "Maxellpack menyediakan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis Anda",
   generator: "v0.dev",
 };
 

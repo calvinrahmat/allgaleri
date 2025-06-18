@@ -27,11 +27,13 @@ export default function Products() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {(products as Product[]).map((product) => (
               <Link key={product.slug} href={`/produk/${product.slug}`}>
-                <Card className="bg-gray-50 shadow-md border-0 cursor-pointer hover:shadow-lg transition">
-                  <CardContent className="pt-6 flex flex-col items-center">
-                    <Image src={product.images[0]} alt={product.name} width={160} height={120} className="mb-4 rounded" />
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
-                    <p className="text-gray-600 text-center">{product.description}</p>
+                <Card className="w-full bg-white shadow-md border-0 cursor-pointer hover:shadow-lg transition rounded-xl overflow-hidden">
+                  <div className="w-full aspect-[4/3] relative">
+                    <Image src={product.images[0]} alt={product.name} fill className="object-cover w-full h-full rounded-t-xl" />
+                  </div>
+                  <CardContent className="p-6 flex flex-col items-start gap-2">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2">{product.name}</h3>
+                    <p className="text-gray-600 text-left text-lg leading-relaxed">{product.description}</p>
                   </CardContent>
                 </Card>
               </Link>
