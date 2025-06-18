@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Welcome to Maxellpack",
@@ -81,6 +82,21 @@ export default function RootLayout({
               </div>
             </div>
           </footer>
+
+          {/* WhatsApp Button (Global) */}
+          <div className="fixed bottom-6 right-6 z-50">
+            <Link href="https://wa.me/6281234567890?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan">
+              <Button className="bg-white hover:bg-white/90 h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg p-0">
+                <Image
+                  src="/whatsapp.svg"
+                  alt="WhatsApp"
+                  width={32}
+                  height={32}
+                  className="md:w-12 md:h-12"
+                />
+              </Button>
+            </Link>
+          </div>
         </ThemeProvider>
       </body>
     </html>

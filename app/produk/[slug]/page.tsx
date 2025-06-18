@@ -44,9 +44,12 @@ export default function ProductDetail({ params }: { params: { slug: string } }) 
           {/* Product Information */}
           <div className="space-y-6">
             <div className="space-y-2">
-              <Badge variant="secondary" className="w-fit">
-                Ready Stock
-              </Badge>
+              {/* Only show Ready Stock if not kardus-custom */}
+              {product.slug !== "kardus-custom" && (
+                <Badge variant="secondary" className="w-fit">
+                  Ready Stock
+                </Badge>
+              )}
               <h1 className="text-3xl font-bold tracking-tight">{product.name}</h1>
               <div className="flex items-center space-x-2">
                 {/* You can add ratings or other info here if needed */}

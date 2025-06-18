@@ -317,7 +317,7 @@ export default function Home() {
             <Card className="bg-white shadow-md border-0">
               <CardContent className="pt-6">
                 <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Sudah dipercaya ratusan Brand Local</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Sudah dipercaya ratusan Brand Lokal</h3>
                 </div>
                 <p className="text-gray-600">
                   Dari UMKM sampai Brand Besar sudah pakai Maxellpack untuk memperkuat citra produk mereka melalui kemasan yang berkualitas.
@@ -439,22 +439,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WhatsApp Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <Link href="https://wa.me/6281234567890?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan">
-          <Button className="bg-white hover:bg-white/90 h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg p-0">
-            <Image
-              src="/whatsapp.svg"
-              alt="WhatsApp"
-              width={32}
-              height={32}
-              className="md:w-12 md:h-12"
-            />
-          </Button>
-        </Link>
-      </div>
-
-      
     </main>
   );
 }
