@@ -152,28 +152,12 @@ export default function HubungiKami() {
                 <Card className="border-0 shadow-md">
                   <CardContent className="p-6">
                     <div className="flex items-start">
-                      <MapPin className="h-6 w-6 text-indigo mr-3 mt-1" />
-                      <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">
-                          Alamat
-                        </h3>
-                        <p className="text-gray-600">
-                          Jl. Kencana Raya No.C1 No.5 Jakarta
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-md">
-                  <CardContent className="p-6">
-                    <div className="flex items-start">
                       <Phone className="h-6 w-6 text-indigo mr-3 mt-1" />
                       <div>
                         <h3 className="font-semibold text-gray-800 mb-1">
                           Telepon
                         </h3>
-                        <p className="text-gray-600">+62 812 3456 7890</p>
+                        <p className="text-gray-600">0812-9277-3973</p>
                       </div>
                     </div>
                   </CardContent>
