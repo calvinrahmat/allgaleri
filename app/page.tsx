@@ -91,6 +91,37 @@ export default function Home() {
         <HeroLogosMarquee />
       </section>
 
+      {/* Tentang Kami - Hero Section */}
+        <section className="bg-lavender py-16 px-4">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h1 className="text-4xl font-bold mb-6 text-gray-800">
+              Tentang Maxellpack
+            </h1>
+            <p className="text-lg text-gray-700 mb-8">
+              Maxellpack adalah perusahaan yang berfokus pada pembuatan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis. Dengan pengalaman bertahun-tahun, kami telah menjadi mitra terpercaya bagi banyak brand ternama di Indonesia.
+            </p>
+            <Link href="/hubungi-kami">
+              <Button className="bg-indigo hover:bg-indigo/90 text-white">
+                Hubungi Kami
+              </Button>
+            </Link>
+          </div>
+          <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/cP-3ZILDYAk?si=5bGAjXTKxnsz2Wm_"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* Section 2: Produk Kami */}
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-7xl mx-auto">
@@ -206,36 +237,7 @@ export default function Home() {
       
       </section>
 
-      {/* Tentang Kami - Hero Section */}
-      <section className="bg-lavender py-16 px-4">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="text-4xl font-bold mb-6 text-gray-800">
-              Tentang Maxellpack
-            </h1>
-            <p className="text-lg text-gray-700 mb-8">
-              Maxellpack adalah perusahaan yang berfokus pada pembuatan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis. Dengan pengalaman bertahun-tahun, kami telah menjadi mitra terpercaya bagi banyak brand ternama di Indonesia.
-            </p>
-            <Link href="/hubungi-kami">
-              <Button className="bg-indigo hover:bg-indigo/90 text-white">
-                Hubungi Kami
-              </Button>
-            </Link>
-          </div>
-          <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/cP-3ZILDYAk?si=5bGAjXTKxnsz2Wm_"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Mengapa Maxellpack */}
       <section className="py-16 px-4 bg-lime">
