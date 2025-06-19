@@ -72,7 +72,7 @@ export default function Home() {
         </div>
         {/* White overlay */}
         <div className="absolute inset-0 md:pl-14 flex flex-col justify-start md:pt-40 p-4 text-[#5453E3] z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
-          <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold mb-4">
+          <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold mb-4 mt-16 md:mt-0">
             SOLUSI KEMASAN BERKUALITAS UNTUK BISNIS ANDA
           </h1>
           <p className="md:text-xl lg:text-2xl mb-8">

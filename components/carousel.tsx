@@ -5,20 +5,21 @@ import Image from "next/image";
 
 const slides = [
   {
-    id: 0,
-    src: "/banner_1.png",
-    alt: "Banner 1 - Maxellpack",
-  },
-  {
     id: 1,
-    src: "/banner_2.png",
-    alt: "Banner 2 - Maxellpack",
+    src: "/banner_4.jpg",
+    alt: "Banner 4 - Maxellpack",
   },
   {
     id: 2,
-    src: "/banner_3.png",
-    alt: "Banner 3 - Maxellpack",
+    src: "/banner_5.jpeg",
+    alt: "Banner 1 - Maxellpack",
   },
+  {
+    id: 3,
+    src: "/banner_6.jpeg",
+    alt: "Banner 2 - Maxellpack",
+  },    
+
 ];
 
 export function Carousel() {
@@ -44,13 +45,16 @@ export function Carousel() {
             current === idx ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          <Image
-            src={slide.src}
-            alt={slide.alt}
-            fill
-            className="object-contain md:object-cover"
-            priority={current === idx}
-          />
+          <div className="relative w-full h-full">
+            <Image
+              src={slide.src}
+              alt={slide.alt}
+              fill
+              className="object-contain md:object-cover"
+              priority={current === idx}
+            />
+            <div className="absolute inset-0 bg-white/50 z-10 pointer-events-none" />
+          </div>
         </div>
       ))}
       {/* Dots */}
