@@ -12,6 +12,7 @@ import { MobileCarousel } from "@/components/MobileCarousel";
 import WorkflowSection from "@/workflow-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   type Product = {
@@ -58,6 +59,20 @@ export default function Home() {
     }
   ];
 
+  // Animation variants for staggered children
+  const staggerContainer = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+  };
+
   return (
     <main className="min-h-screen bg-lavender">
       {/* Section 1: Welcome Banner */}
@@ -72,13 +87,23 @@ export default function Home() {
         </div>
         {/* White overlay */}
         <div className="absolute inset-0 md:pl-14 flex flex-col justify-start md:pt-40 p-4 text-[#5453E3] z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
-          <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold mb-4 mt-16 md:mt-0">
+          <motion.h1
+            className="text-2xl md:text-5xl lg:text-7xl font-bold mb-4 mt-16 md:mt-0"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             SOLUSI KEMASAN BERKUALITAS UNTUK BISNIS ANDA
-          </h1>
-          <p className="md:text-xl lg:text-2xl mb-8">
+          </motion.h1>
+          <motion.p
+            className="md:text-xl lg:text-2xl mb-8"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
             Maxellpack menyediakan kemasan custom berkualitas tinggi untuk
             berbagai kebutuhan bisnis Anda
-          </p>
+          </motion.p>
           <Link href="/hubungi-kami">
             <Button className="bg-[#EFF187] text-[#5453E3] font-bold px-8 py-6 rounded-lg hover:bg-[#EFF187]">
               CONSULT NOW <ArrowRight className="ml-3 h-5 w-5" />
@@ -128,16 +153,23 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Produk Kami
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {products.map((product) => (
-              <ProductCard
-                key={product.slug}
-                title={product.name}
-                description={product.description}
-                imageSrc={product.images[0]}
-              />
+              <motion.div key={product.slug} variants={fadeInUp}>
+                <ProductCard
+                  title={product.name}
+                  description={product.description}
+                  imageSrc={product.images[0]}
+                />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -245,88 +277,75 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Mengapa Memilih Maxellpack?
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Custom Sesuai Kebutuhan</h3>
-                </div>
-                <p className="text-gray-600">
-                  Ukuran, Bentuk, Desain dan Bahan bisa disesuaikan 100% dengan karakter produk dan brand kamu.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Kuat dan Aman</h3>
-                </div>
-                <p className="text-gray-600">
-                  Bahan Berkualitas tinggi yang tahan banting, cocok untuk ekspedisi dan pengiriman antar kota bahkan luar pulau
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Tampil Lebih Profesional</h3>
-                </div>
-                <p className="text-gray-600">
-                  Bikin pelanggan langsung percaya saat terima paket. 
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Minimum order Rendah</h3>
-                </div>
-                <p className="text-gray-600">
-                  Mulai dari ratusan PCS saja sudah bisa produksi custom kardusmu. Cocok untuk UMKM, Dropshipper dan brand yang baru memulai bisnis
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Harga Terjangkau, Kualitas Maksimal</h3>
-                </div>
-                <p className="text-gray-600">
-                  Kami bantu efisiensi bisnis kamu tanpa harus keliatan 'Murahan'. Hemat tanpa kompromi kualitas.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Cetak Logo dan Desain Ekslusif</h3>
-                </div>
-                <p className="text-gray-600">
-                  Bisa request cetak nama brand/logo supaya produk kamu terlihat lebih premium dan mudah diingat.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Respon Cepat dan Gratis Konsultasi</h3>
-                </div>
-                <p className="text-gray-600">
-                  Tim kami siap bantu hitung kebutuhan, pilih bahan, dan rekomendasi ukuran terbaik. Gratis!
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white shadow-md border-0">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">Sudah dipercaya ratusan Brand Lokal</h3>
-                </div>
-                <p className="text-gray-600">
-                  Dari UMKM sampai Brand Besar sudah pakai Maxellpack untuk memperkuat citra produk mereka melalui kemasan yang berkualitas.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {/* 8 cards */}
+            {[
+              "Custom Sesuai Kebutuhan",
+              "Kuat dan Aman",
+              "Tampil Lebih Profesional",
+              "Minimum order Rendah",
+              "Harga Terjangkau, Kualitas Maksimal",
+              "Cetak Logo dan Desain Ekslusif",
+              "Respon Cepat dan Gratis Konsultasi",
+              "Sudah dipercaya ratusan Brand Lokal",
+            ].map((title, idx) => (
+              <motion.div key={title} variants={fadeInUp}>
+                {/* Card content, copy from original */}
+                {(() => {
+                  const cardContents = [
+                    [
+                      "Custom Sesuai Kebutuhan",
+                      "Ukuran, Bentuk, Desain dan Bahan bisa disesuaikan 100% dengan karakter produk dan brand kamu.",
+                    ],
+                    [
+                      "Kuat dan Aman",
+                      "Bahan Berkualitas tinggi yang tahan banting, cocok untuk ekspedisi dan pengiriman antar kota bahkan luar pulau",
+                    ],
+                    [
+                      "Tampil Lebih Profesional",
+                      "Bikin pelanggan langsung percaya saat terima paket. ",
+                    ],
+                    [
+                      "Minimum order Rendah",
+                      "Mulai dari ratusan PCS saja sudah bisa produksi custom kardusmu. Cocok untuk UMKM, Dropshipper dan brand yang baru memulai bisnis",
+                    ],
+                    [
+                      "Harga Terjangkau, Kualitas Maksimal",
+                      "Kami bantu efisiensi bisnis kamu tanpa harus keliatan 'Murahan'. Hemat tanpa kompromi kualitas.",
+                    ],
+                    [
+                      "Cetak Logo dan Desain Ekslusif",
+                      "Bisa request cetak nama brand/logo supaya produk kamu terlihat lebih premium dan mudah diingat.",
+                    ],
+                    [
+                      "Respon Cepat dan Gratis Konsultasi",
+                      "Tim kami siap bantu hitung kebutuhan, pilih bahan, dan rekomendasi ukuran terbaik. Gratis!",
+                    ],
+                    [
+                      "Sudah dipercaya ratusan Brand Lokal",
+                      "Dari UMKM sampai Brand Besar sudah pakai Maxellpack untuk memperkuat citra produk mereka melalui kemasan yang berkualitas.",
+                    ],
+                  ];
+                  return (
+                    <Card className="bg-white shadow-md border-0">
+                      <CardContent className="pt-6">
+                        <div className="flex items-center mb-3">
+                          <h3 className="text-xl font-semibold text-gray-800">{cardContents[idx][0]}</h3>
+                        </div>
+                        <p className="text-gray-600">{cardContents[idx][1]}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })()}
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
@@ -336,39 +355,43 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Keunggulan Kami
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
-              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Desain Custom</h3>
-                <p className="text-gray-600">Tim desain kami akan membantu Anda menciptakan kemasan yang sesuai dengan brand dan kebutuhan produk Anda.</p>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
-              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Bahan Berkualitas</h3>
-                <p className="text-gray-600">Kami hanya menggunakan bahan berkualitas tinggi untuk memastikan kemasan Anda tahan lama dan aman.</p>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
-              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Harga Kompetitif</h3>
-                <p className="text-gray-600">Kami menawarkan harga yang kompetitif tanpa mengorbankan kualitas produk dan layanan.</p>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
-              <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">Ramah Lingkungan</h3>
-                <p className="text-gray-600">Kami berkomitmen untuk menggunakan bahan dan proses produksi yang ramah lingkungan.</p>
-              </div>
-            </div>
-          </div>
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {/* 4 cards */}
+            {[
+              [
+                "Desain Custom",
+                "Tim desain kami akan membantu Anda menciptakan kemasan yang sesuai dengan brand dan kebutuhan produk Anda.",
+              ],
+              [
+                "Bahan Berkualitas",
+                "Kami hanya menggunakan bahan berkualitas tinggi untuk memastikan kemasan Anda tahan lama dan aman.",
+              ],
+              [
+                "Harga Kompetitif",
+                "Kami menawarkan harga yang kompetitif tanpa mengorbankan kualitas produk dan layanan.",
+              ],
+              [
+                "Ramah Lingkungan",
+                "Kami berkomitmen untuk menggunakan bahan dan proses produksi yang ramah lingkungan.",
+              ],
+            ].map(([title, desc]) => (
+              <motion.div key={title} variants={fadeInUp}>
+                <div className="bg-white p-6 rounded-lg shadow-md flex h-[180px] items-center">
+                  <CheckCircle className="h-8 w-8 text-indigo mr-3 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
+                    <p className="text-gray-600">{desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
