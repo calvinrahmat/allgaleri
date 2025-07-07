@@ -5,7 +5,6 @@ import Script from "next/script";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/whatsapp-button";
 
 export const metadata: Metadata = {
@@ -38,7 +37,7 @@ export default function RootLayout({
             function gtag_report_conversion(url) {
               var callback = function () {
                 if (typeof(url) != 'undefined') {
-                  window.location = url;
+                  window.open(url, '_blank');
                 }
               };
               gtag('event', 'conversion', {
