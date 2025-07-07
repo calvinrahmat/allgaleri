@@ -105,6 +105,14 @@ export default function RootLayout({
               href="https://wa.me/6281292773973?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                // @ts-ignore
+                window.gtag('event', 'whatsapp_click', {
+                  'event_category': 'Contact',
+                  'event_label': 'WhatsApp Button Click',
+                  'value': 1
+                });
+              }}
             >
               <Button className="bg-white hover:bg-white/90 h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg p-0">
                 <Image
