@@ -33,6 +33,19 @@ export default function RootLayout({
             gtag('js', new Date());
 
             gtag('config', 'AW-11310080769');
+
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-11310080769/6XAtCJeXmvAYEIHGiJEq',
+                'event_callback': callback
+              });
+              return false;
+            }
           `}
         </Script>
       </head>
@@ -107,11 +120,7 @@ export default function RootLayout({
               rel="noopener noreferrer"
               onClick={() => {
                 // @ts-ignore
-                window.gtag('event', 'whatsapp_click', {
-                  'event_category': 'Contact',
-                  'event_label': 'WhatsApp Button Click',
-                  'value': 1
-                });
+                return gtag_report_conversion("https://wa.me/6281292773973?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan");
               }}
             >
               <Button className="bg-white hover:bg-white/90 h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg p-0">
