@@ -101,7 +101,11 @@ export default function RootLayout({
 
           {/* WhatsApp Button (Global) */}
           <div className="fixed bottom-6 right-6 z-50">
-            <Link href="https://wa.me/6281292773973?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan">
+            <Link 
+              href="https://wa.me/6281292773973?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button className="bg-white hover:bg-white/90 h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg p-0">
                 <Image
                   src="/whatsapp.svg"
