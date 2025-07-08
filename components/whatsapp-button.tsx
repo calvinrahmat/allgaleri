@@ -9,6 +9,14 @@ export default function WhatsAppButton() {
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    // Track WhatsApp click with Meta Pixel
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Contact', {
+        content_name: 'WhatsApp Button Click',
+        content_category: 'Contact',
+        content_type: 'WhatsApp'
+      });
+    }
     // @ts-ignore
     gtag_report_conversion(whatsappUrl);
   };
