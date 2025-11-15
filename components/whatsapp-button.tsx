@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 
 export default function WhatsAppButton() {
-  const whatsappUrl = "https://wa.me/6281292773973?text=Halo%20Maxellpack,%20saya%20ingin%20konsultasi%20tentang%20kemasan";
+  const whatsappUrl = "https://wa.me/6281511408638?text=Halo%20Allgaleri,%20saya%20ingin%20konsultasi%20tentang%20kemasan";
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();

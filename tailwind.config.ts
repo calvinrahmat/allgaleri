@@ -57,12 +57,12 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         // Custom color palette
-        indigo: "#5453E3",
-        lime: "#EFF187",
-        lavender: "#CDDCFC",
+        indigo: "#778873", // Dark Green/Olive (primary)
+        lime: "#A1BC98", // Medium Green (secondary)
+        lavender: "#D2DCB6", // Sage Green (light background)
         offwhite: "#FCFFFF",
         pink: "#EDB5F7",
-        cream: "#FFFAF3",
+        cream: "#F1F3E0", // Light Beige/Cream
       },
       borderRadius: {
         lg: "var(--radius)",

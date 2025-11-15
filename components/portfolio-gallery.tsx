@@ -6,28 +6,28 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 const portfolioItems = [
   {
-    id: 5,
+    id: 1,
     title: "Kardus Industri",
     client: "Nippon Paint",
-    image: "/box_4.png",
+    image: "/portofolio-1.png",
   },
   {
     id: 2,
     title: "Kardus Custom E-commerce",
     client: "DeClip",
-    image: "/box_8.png",
+    image: "/portofolio-2.png",
   },
   {
     id: 3,
     title: "Kemasan Kosmetik",
     client: "Zeodda",
-    image: "/box_3.png",
+    image: "/portofolio-3.png",
   },
   {
     id: 4,
     title: "Kemasan Merchandise",
     client: "Bank INA",
-    image: "/box_7.png",
+    image: "/portofolio-4.png",
   },
 ];
 

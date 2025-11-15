@@ -7,17 +7,17 @@ const slides = [
   {
     id: 1,
     src: "/banner_4.jpg",
-    alt: "Banner 4 - Maxellpack",
+    alt: "Banner 4 - Allgaleri",
   },
   {
     id: 2,
     src: "/banner_5.jpeg",
-    alt: "Banner 1 - Maxellpack",
+    alt: "Banner 1 - Allgaleri",
   },
   {
     id: 3,
     src: "/banner_6.jpeg",
-    alt: "Banner 2 - Maxellpack",
+    alt: "Banner 2 - Allgaleri",
   },    
 
 ];

@@ -4,21 +4,12 @@ import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
 const logos = [
-  { src: "/clients/declip.png", alt: "Declip" },
-  { src: "/clients/larocking.png", alt: "Larocking" },
-  { src: "/clients/bu_nanik.jpeg", alt: "Bu Nanik" },
-  { src: "/clients/omextra.png", alt: "Omextra" },
-  { src: "/clients/milai.png", alt: "Milai" },
-  { src: "/clients/kinza.png", alt: "Kinza" },
-  { src: "/clients/xl.png", alt: "XL" },
-  { src: "/clients/nippon_paint.png", alt: "Nippon Paint" },
-  { src: "/clients/bank_ina.png", alt: "Bank INA" },
-  { src: "/clients/kimia_farma.png", alt: "Kimia Farma" },
-  { src: "/clients/andnic-bakery.jpeg", alt: "Andnic Bakery" },
-  { src: "/clients/arkais.jpeg", alt: "Arkais" },
-  { src: "/clients/gulali_books.jpeg", alt: "Gulali Books" },
-  { src: "/clients/maeko.jpeg", alt: "Maeko" },
-  { src: "/clients/natural-farm.jpeg", alt: "Natural Farm" }
+  { src: "/clients/client-1.png", alt: "Client 1" },
+  { src: "/clients/client-2.png", alt: "Client 2" },
+  { src: "/clients/client-3.png", alt: "Client 3" },
+  { src: "/clients/client-4.png", alt: "Client 4" },
+  { src: "/clients/client-5.png", alt: "Client 5" },
+  { src: "/clients/client-6.png", alt: "Client 6" }
 ];
 
 export function HeroLogosMarquee() {

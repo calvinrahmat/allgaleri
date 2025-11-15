@@ -8,9 +8,9 @@ import Image from "next/image";
 import WhatsAppButton from "@/components/whatsapp-button";
 
 export const metadata: Metadata = {
-  title: "Welcome to Maxellpack",
+  title: "Welcome to Allgaleri",
   description:
-    "Maxellpack menyediakan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis Anda",
+    "Allgaleri menyediakan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis Anda",
   generator: "v0.dev",
 };
 
@@ -106,11 +106,11 @@ export default function RootLayout({
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                   <Image
-                    src="/maxellpack-logo.jpeg"
-                    alt="Maxellpack Logo"
-                    width={180}
-                    height={180}
-                    className="mb-4"
+                    src="/logo.png"
+                    alt="Allgaleri Logo"
+                    width={160}
+                    height={160}
+                    className="mb-4 rounded-full object-cover w-40 h-40"
                   />
                   <p className="text-gray-300">
                     Solusi kemasan berkualitas untuk berbagai kebutuhan bisnis
@@ -127,27 +127,27 @@ export default function RootLayout({
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="/produk"
+                      <a
+                        href="#tentang-kami"
                         className="text-gray-300 hover:text-white"
                       >
                         Tentang Kami
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
-                        href="/hubungi-kami"
+                      <a
+                        href="#hubungi-kami"
                         className="text-white"
                       >
                         Hubungi Kami
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
                 <p>
-                  © {new Date().getFullYear()} Maxellpack. All rights reserved.
+                  © {new Date().getFullYear()} Allgaleri. All rights reserved.
                 </p>
               </div>
             </div>
