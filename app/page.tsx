@@ -408,7 +408,7 @@ export default function Home() {
         </div>
 
         {/* Contact Tabs */}
-        <div className="py-16 px-4 bg-cream border-b border-gray-200">
+        {/* <div className="py-16 px-4 bg-cream border-b border-gray-200">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800 text-center">
               Hubungi Tim Kami
@@ -416,7 +416,6 @@ export default function Home() {
             <Tabs defaultValue="whatsapp">
               <TabsContent value="whatsapp">
                 <div className="grid md:grid-cols-3 gap-6">
-                  {/* Konsultasi */}
                   <Card className="border-0 shadow-lg bg-white">
                     <CardContent className="p-6 flex flex-col h-full">
                       <div className="flex items-center mb-3">
@@ -446,7 +445,6 @@ export default function Home() {
                       </a>
                     </CardContent>
                   </Card>
-                  {/* Order */}
                   <Card className="border-0 shadow-lg bg-white">
                     <CardContent className="p-6 flex flex-col h-full">
                       <div className="flex items-center mb-3">
@@ -498,7 +496,6 @@ export default function Home() {
                       </Button>
                     </CardContent>
                   </Card>
-                  {/* Linktree */}
                   <Card className="border-0 shadow-lg bg-white">
                     <CardContent className="p-6 flex flex-col h-full">
                       <div className="flex items-center mb-3">
@@ -537,9 +534,9 @@ export default function Home() {
               </TabsContent>
             </Tabs>
           </div>
-        </div>
+        </div> */}
 
-        {/* Contact Information */}
+        {/* Contact Information
         <div className="py-16 px-4 bg-white border-b border-gray-200">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800 text-center">
@@ -558,7 +555,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </main>
   );
