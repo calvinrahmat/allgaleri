@@ -9,8 +9,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Cloudflare Pages configuration
-  output: 'standalone',
 }
 
 export default nextConfig

@@ -2,13 +2,11 @@
 import Link from "next/link";
 import { MapPin, Phone, Mail, ArrowRight, MessageSquare, Package, Shield, Award, DollarSign, Palette, Zap, Users, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Carousel } from "@/components/carousel";
 import { ProductCard } from "@/components/product-card";
 import { SocialLinks } from "@/components/social-links";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
 import Image from "next/image";
 import { HeroLogosMarquee } from "@/components/HeroLogosMarquee";
-import { MobileCarousel } from "@/components/MobileCarousel";
 import WorkflowSection from "@/workflow-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
@@ -37,7 +35,7 @@ export default function Home() {
     {
       slug: "kardus-standar",
       name: "Kardus Standar",
-      images: ["/products/produk-1.png"],
+      images: ["/products/produk-3.png"],
       suitableFor: "Cocok untuk packaging produk custom, retail, dan pengiriman",
       description: "Kardus serbaguna dengan spesifikasi yang dapat disesuaikan untuk berbagai kebutuhan bisnis Anda.",
       details: "Kardus Standar kami menawarkan fleksibilitas dalam ukuran, desain, dan bahan, sehingga cocok untuk berbagai jenis produk. Solusi ideal untuk packaging custom, retail, dan pengiriman, dengan kualitas material yang terjamin untuk menjaga keamanan produk Anda."
@@ -53,7 +51,7 @@ export default function Home() {
     {
       slug: "kardus-lembaran",
       name: "Kardus Lembaran",
-      images: ["/products/produk-3.png"],
+      images: ["/products/produk-1.png"],
       suitableFor: "Cocok untuk kemasan premium dan ramah lingkungan",
       description: "Lembaran kardus berkualitas tinggi untuk solusi kemasan premium dan ramah lingkungan.",
       details: "Kardus Lembaran kami terbuat dari bahan yang kokoh dan eco-friendly, sangat cocok untuk packaging premium, toko retail, maupun event. Dapat dicustom sesuai kebutuhan, memberikan kesan eksklusif dan mendukung citra ramah lingkungan brand Anda."
@@ -61,7 +59,7 @@ export default function Home() {
     {
       slug: "kardus-custom",
       name: "Kardus Custom",
-      images: ["/products/produk-1.png"],
+      images: ["/products/portofolio-1.png"],
       suitableFor: "Cocok untuk ekspedisi dan e-commerce",
       description: "Kardus custom yang dirancang khusus untuk kebutuhan ekspedisi dan e-commerce.",
       details: "Kardus Custom kami memberikan perlindungan maksimal untuk barang kiriman Anda. Tersedia dalam berbagai ukuran dan ketebalan, sangat cocok untuk pengiriman ekspedisi dan bisnis online. Dapat dicetak dengan logo atau desain brand Anda untuk meningkatkan profesionalisme pengiriman."
@@ -85,72 +83,57 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-lavender">
       {/* Section 1: Welcome Banner */}
-      <section id="beranda" className="relative w-full min-h-[75vh]">
-        {/* Mobile: auto-rotating carousel */}
-        <div className="block md:hidden w-full h-full absolute inset-0 z-0 ">
-          <MobileCarousel />
-        </div>
-        {/* Desktop: carousel */}
-        <div className="hidden md:block inset-0 z-0 ">
-          <Carousel />
-        </div>
-        {/* White overlay */}
-        <div className="absolute inset-0 md:pl-14 flex flex-col justify-start md:pt-40 p-4 text-yellow z-20 items-center text-center md:items-start md:text-left max-w-xl md:max-w-2xl lg:max-w-3xl">
-          <motion.h1
-            className="text-2xl md:text-5xl lg:text-7xl font-bold mb-4 mt-16 md:mt-0"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            SOLUSI KEMASAN BERKUALITAS UNTUK BISNIS ANDA
-          </motion.h1>
-          <motion.p
-            className="md:text-xl lg:text-2xl mb-8"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          >
-            Allgaleri menyediakan kemasan custom berkualitas tinggi untuk
-            berbagai kebutuhan bisnis Anda
-          </motion.p>
-          <a href="#hubungi-kami">
-            <Button className="bg-[#A1BC98] text-white font-bold px-8 py-6 rounded-lg hover:bg-[#778873]">
-              CONSULT NOW <ArrowRight className="ml-3 h-5 w-5" />
-            </Button>
-          </a>
+      <section id="beranda" className="relative w-full min-h-[75vh] bg-lavender">
+        <div className="max-w-7xl mx-auto px-4 py-16 md:py-20">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Text content on the left */}
+            <div className="flex flex-col justify-center text-center md:text-left">
+              <motion.h1
+                className="text-2xl md:text-5xl lg:text-7xl font-bold mb-4 text-gray-800"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                SOLUSI KEMASAN BERKUALITAS UNTUK BISNIS ANDA
+              </motion.h1>
+              <motion.p
+                className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-700"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              >
+                Allgaleri menyediakan kemasan custom berkualitas tinggi untuk
+                berbagai kebutuhan bisnis Anda
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+              >
+                <a href="#hubungi-kami">
+                  <Button className="bg-[#A1BC98] text-white font-bold px-8 py-6 rounded-lg hover:bg-[#778873]">
+                    CONSULT NOW <ArrowRight className="ml-3 h-5 w-5" />
+                  </Button>
+                </a>
+              </motion.div>
+            </div>
+            {/* Image on the right */}
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/about.png"
+                alt="Allgaleri - Solusi Kemasan Berkualitas"
+                width={800}
+                height={600}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
       {/* Client Carousel Section */}
       <section className="bg-white flex items-center">
         <HeroLogosMarquee />
-      </section>
-
-      {/* Tentang Kami - Hero Section */}
-        <section id="tentang-kami" className="bg-lime py-16 px-4">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="text-4xl font-bold mb-6 text-gray-800">
-              Tentang Allgaleri
-            </h1>
-            <p className="text-lg text-gray-700 mb-8">
-              Allgaleri adalah perusahaan yang berfokus pada pembuatan kemasan custom berkualitas tinggi untuk berbagai kebutuhan bisnis. Dengan pengalaman bertahun-tahun, kami telah menjadi mitra terpercaya bagi banyak brand ternama di Indonesia.
-            </p>
-            <a href="#hubungi-kami">
-              <Button className="bg-indigo hover:bg-indigo/90 text-white">
-                Hubungi Kami
-              </Button>
-            </a>
-          </div>
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src="/about.png"
-              alt="Tentang Allgaleri"
-              width={800}
-              height={600}
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
       </section>
 
       {/* Section 2: Produk Kami */}
