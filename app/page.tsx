@@ -110,7 +110,11 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
               >
-                <a href="#hubungi-kami">
+                <a 
+                  href="https://wa.me/6281511408638?text=Halo%20Allgaleri,%20saya%20ingin%20konsultasi%20tentang%20kemasan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button className="bg-[#A1BC98] text-white font-bold px-8 py-6 rounded-lg hover:bg-[#778873]">
                     CONSULT NOW <ArrowRight className="ml-3 h-5 w-5" />
                   </Button>
@@ -387,14 +391,14 @@ export default function Home() {
       </section> */}
 
       {/* Section 7: Social Media & E-commerce */}
-      <section className="py-16 px-4 bg-lavender">
+      {/* <section className="py-16 px-4 bg-lavender">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Temukan Kami
           </h2>
           <SocialLinks />
         </div>
-      </section>
+      </section> */}
 
       {/* Section 8: Hubungi Kami */}
       <section id="hubungi-kami" className="py-20 px-4 bg-lavender border-b border-gray-200">

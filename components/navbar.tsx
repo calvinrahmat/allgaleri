@@ -40,7 +40,9 @@ export default function Navbar() {
             
             </nav>
             <a
-              href="#hubungi-kami"
+              href="https://wa.me/6281511408638?text=Halo%20Allgaleri,%20saya%20ingin%20konsultasi%20tentang%20kemasan"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 border border-transparent font-medium rounded-md shadow-sm text-white bg-indigo hover:bg-indigo/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo"
             >
               Hubungi Kami
@@ -111,7 +113,9 @@ export default function Navbar() {
               Produk
             </a>
             <a
-              href="#hubungi-kami"
+              href="https://wa.me/6281511408638?text=Halo%20Allgaleri,%20saya%20ingin%20konsultasi%20tentang%20kemasan"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block pl-3 pr-4 py-2 border-l-4 text-base font-medium border-transparent text-[#778873] hover:bg-gray-50 hover:border-gray-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
