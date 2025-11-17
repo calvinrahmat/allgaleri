@@ -106,7 +106,7 @@ export default function RootLayout({
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                   <Image
-                    src="/logo.png"
+                    src="/logo.jpeg"
                     alt="Allgaleri Logo"
                     width={160}
                     height={160}

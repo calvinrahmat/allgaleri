@@ -14,7 +14,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center cursor-pointer" aria-label="Allgaleri Home">
               <Image
-                src="/logo.png"
+                src="/logo.jpeg"
                 alt="Allgaleri Logo"
                 width={64}
                 height={64}

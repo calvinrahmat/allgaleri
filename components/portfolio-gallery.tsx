@@ -23,7 +23,13 @@ const portfolioItems = [
     client: "HOP",
     image: "/portofolio-3.png",
   },
-  
+  {
+    id: 4,
+    title: "Kardus Custom",
+    client: "Pecora Coffee",
+    image: "/portofolio-4.png",
+  },
+
 ];
 
 export function PortfolioGallery() {

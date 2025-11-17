@@ -51,18 +51,18 @@ export default function Home() {
     {
       slug: "kardus-lembaran",
       name: "Kardus Lembaran",
-      images: ["/products/produk-1.png"],
+      images: ["/products/lembaran.png"],
       suitableFor: "Cocok untuk kemasan premium dan ramah lingkungan",
       description: "Lembaran kardus berkualitas tinggi untuk solusi kemasan premium dan ramah lingkungan.",
       details: "Kardus Lembaran kami terbuat dari bahan yang kokoh dan eco-friendly, sangat cocok untuk packaging premium, toko retail, maupun event. Dapat dicustom sesuai kebutuhan, memberikan kesan eksklusif dan mendukung citra ramah lingkungan brand Anda."
     },
     {
-      slug: "kardus-custom",
-      name: "Kardus Custom",
-      images: ["/products/portofolio-1.png"],
+      slug: "kardus-singleface",
+      name: "Kardus Singleface",
+      images: ["/products/singleface.png"],
       suitableFor: "Cocok untuk ekspedisi dan e-commerce",
-      description: "Kardus custom yang dirancang khusus untuk kebutuhan ekspedisi dan e-commerce.",
-      details: "Kardus Custom kami memberikan perlindungan maksimal untuk barang kiriman Anda. Tersedia dalam berbagai ukuran dan ketebalan, sangat cocok untuk pengiriman ekspedisi dan bisnis online. Dapat dicetak dengan logo atau desain brand Anda untuk meningkatkan profesionalisme pengiriman."
+      description: "Kardus Singleface yang dirancang khusus untuk kebutuhan ekspedisi dan e-commerce.",
+      details: "Kardus Singleface kami memberikan perlindungan maksimal untuk barang kiriman Anda. Tersedia dalam berbagai ukuran dan ketebalan, sangat cocok untuk pengiriman ekspedisi dan bisnis online. Dapat dicetak dengan logo atau desain brand Anda untuk meningkatkan profesionalisme pengiriman."
     }
   ];
 
@@ -159,6 +159,11 @@ export default function Home() {
                   title={product.name}
                   description={product.description}
                   imageSrc={product.images[0]}
+                  imageStyle={
+                    product.slug === "kardus-die-cut"
+                      ? { objectPosition: "center 85%" }
+                      : undefined
+                  }
                 />
               </motion.div>
             ))}
@@ -349,6 +354,95 @@ export default function Home() {
             Alur Pemesanan
           </h2>
           <WorkflowSection />
+        </div>
+      </section>
+
+      {/* Section 6: Shopee & Lokasi */}
+      <section id="shopee" className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="uppercase text-sm tracking-widest text-[#A1BC98] font-semibold mb-2">
+              Belanja Mudah
+            </p>
+        
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Temukan produk Allgaleri di Shopee untuk transaksi yang aman dan cepat,
+              atau datang langsung ke alamat kami untuk konsultasi kebutuhan kemasan secara langsung.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="bg-cream rounded-2xl shadow-lg p-8 flex flex-col justify-between border border-[#E3E8D4]">
+              <div>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="h-16 w-16 rounded-xl bg-white flex items-center justify-center shadow-inner">
+                    <Image
+                      src="/shopee.png"
+                      alt="Shopee logo"
+                      width={48}
+                      height={48}
+                      className="object-contain"
+                      priority={false}
+                    />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-[#A1BC98] tracking-widest">
+                      Shopee Official Store
+                    </p>
+                    <h3 className="text-2xl font-bold text-gray-800">
+                      Belanja langsung melalui Shopee
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Nikmati promo menarik dan kemudahan pengiriman dengan membeli produk Allgaleri
+                  melalui toko resmi kami di Shopee.
+                </p>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="https://shopee.co.id/allgaleri"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3">
+                    Kunjungi Shopee Kami
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-[#F4F6ED] text-[#7C8F6E]">
+                  <MapPin className="h-6 w-6" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[#A1BC98] tracking-widest mb-2">
+                    Alamat 
+                  </p>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                    Jl. Kapuk Utara No.93
+                  </h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">
+                    RT.1/RW.3, Kapuk Muara, Kecamatan Penjaringan, Jakarta Utara,
+                    Daerah Khusus Ibukota Jakarta 14460
+                  </p>
+                  <div className="mt-6">
+                    <a
+                      href="https://maps.app.goo.gl/hsgSrJK1awfZQaXcA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="outline" className="w-full md:w-auto border-[#A1BC98] text-[#5F6E58] hover:bg-[#F4F6ED]">
+                        Lihat di Google Maps
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
