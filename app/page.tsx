@@ -557,6 +557,8 @@ export default function Home() {
         </div>
       </section> */}
 
+      </section>
+
     </main>
   );
 }
