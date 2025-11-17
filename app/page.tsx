@@ -282,7 +282,7 @@ export default function Home() {
                 number: "01",
                 title: "Desain Custom",
                 description: "Tim desain kami akan membantu Anda menciptakan kemasan yang sesuai dengan brand dan kebutuhan produk Anda.",
-                gradient: "from-indigo-500 to-purple-600"
+                gradient: "from-blue-500 to-cyan-600"
               },
               {
                 number: "02",
