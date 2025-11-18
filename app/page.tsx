@@ -634,7 +634,7 @@ export default function Home() {
           </div>
         </div> */}
 
-        {/* Contact Information
+        {/* Contact Information */}
         <div className="py-16 px-4 bg-white border-b border-gray-200">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800 text-center">
@@ -650,11 +650,23 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
+              <Card className="border-0 shadow-md bg-gray-50">
+                <CardContent className="p-6 flex items-start">
+                  <Mail className="h-6 w-6 text-indigo-500 mr-4 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-1 text-lg">Email</h3>
+                    <a 
+                      href="mailto:allgaleri24@gmail.com"
+                      className="text-gray-600 text-base hover:text-indigo-600 transition-colors"
+                    >
+                      allgaleri24@gmail.com
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
-      </section> */}
-
       </section>
 
     </main>
