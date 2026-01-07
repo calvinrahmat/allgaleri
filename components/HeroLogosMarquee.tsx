@@ -45,7 +45,7 @@ export function HeroLogosMarquee() {
               alt={logo.alt}
               width={70}
               height={40}
-              className="object-contain grayscale opacity-80 hover:opacity-100 transition"
+              className="object-contain opacity-100 transition"
               priority={idx < logos.length}
             />
           </div>
@@ -60,7 +60,7 @@ export function HeroLogosMarquee() {
               alt={logo.alt}
               width={70}
               height={40}
-              className="object-contain grayscale opacity-80 hover:opacity-100 transition"
+              className="object-contain opacity-100 transition"
               priority={idx < logos.length}
             />
           </div>
