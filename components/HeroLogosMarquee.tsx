@@ -7,7 +7,6 @@ const logos = [
   { src: "/clients/client-1.png", alt: "Client 1" },
   { src: "/clients/client-2.png", alt: "Client 2" },
   { src: "/clients/client-3.png", alt: "Client 3" },
-  { src: "/clients/client-4.png", alt: "Client 4" },
   { src: "/clients/client-5.png", alt: "Client 5" },
   { src: "/clients/client-6.png", alt: "Client 6" }
 ];

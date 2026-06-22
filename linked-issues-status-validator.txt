@@ -1,0 +1,20 @@
+// ScriptRunner Cloud - Jira Expression Validator
+// Validates that all linked issues are in CANCELLED or APPROVED status
+
+// Basic Expression (use this in ScriptRunner Validator):
+issue.issueLinks.every(link => (link.inwardIssue != null ? link.inwardIssue.status.name : link.outwardIssue.status.name) in ["CANCELLED", "APPROVED"])
+
+// Error Message:
+All linked issues must be in CANCELLED or APPROVED status before this transition can be performed.
+
+// ===== Alternative Expressions =====
+
+// With null safety and case-insensitive:
+issue.issueLinks.every(link => link.inwardIssue != null ? link.inwardIssue.status.name.toUpperCase() in ["CANCELLED", "APPROVED"] : link.outwardIssue != null ? link.outwardIssue.status.name.toUpperCase() in ["CANCELLED", "APPROVED"] : true)
+
+// Allow empty links (no linked issues = valid):
+issue.issueLinks.length == 0 || issue.issueLinks.every(link => (link.inwardIssue != null ? link.inwardIssue.status.name : link.outwardIssue.status.name) in ["CANCELLED", "APPROVED"])
+
+// Show invalid issue keys in error message:
+{{issue.issueLinks.filter(link => !((link.inwardIssue != null ? link.inwardIssue.status.name : link.outwardIssue.status.name) in ["CANCELLED", "APPROVED"])).map(link => (link.inwardIssue != null ? link.inwardIssue.key : link.outwardIssue.key)).join(", ")}}
+
